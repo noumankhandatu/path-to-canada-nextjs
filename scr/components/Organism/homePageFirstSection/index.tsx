@@ -26,10 +26,10 @@ const HomePageFirstSection = ({
         }}
       >
         <div className="pt-5 pl-5 pr-10 md:pl-20 md:pr-20 md:w-1/2">
-          <p className="lg:text-6xl text-4xl font-bold md:tracking-wide text-cyan-900	">
+          <div className="lg:text-6xl text-4xl font-bold md:tracking-wide text-cyan-900	">
             {heading}
-          </p>
-          <p className="pt-10">{paragraph}</p>
+          </div>
+          <div className="pt-10">{paragraph}</div>
           <div className="mt-10 md:flex ">
             {showFirstBtn ? <Button text="AM I CANDIDATE ?" primary /> : null}
             <div className="mr-4 mt-10 "></div>

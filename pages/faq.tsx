@@ -18,10 +18,10 @@ const FAQ = () => {
       />
       <Wrapper className="bg-aqua-color text-white">
         <div className="pt-20 pb-20 text-center">
-          <p className="text-4xl font-bold">Help me find a candidate</p>
-          <p className="font-bold pt-10 pb-2">
+          <div className="text-4xl font-bold">Help me find a candidate</div>
+          <div className="font-bold pt-10 pb-2">
             How do I get experienced tech talent for my Canadian company?
-          </p>
+          </div>
           <Font className="pt-4 pb-4">
             Is this a different pool of talent than what I can currently access?
             What does it cost? Why should I use your services? What is the

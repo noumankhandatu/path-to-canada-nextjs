@@ -37,13 +37,13 @@ const Home: NextPage = () => {
         />
         {/* Second Section Started  => */}
         <Wrapper className="bg-light-red">
-          <p className="text-4xl text-center font-bold pt-20  pb-10  text-cyan-900">
+          <div className="text-4xl text-center font-bold pt-20  pb-10  text-cyan-900">
             Path to Canada has a deep understanding
-            <p className="breaks-words">
+            <div className="breaks-words">
               of the current hiring challenges in the
-            </p>
-            <p className="breaks-words ">North American tech ecosystem.</p>
-          </p>
+            </div>
+            <div className="breaks-words ">North American tech ecosystem.</div>
+          </div>
           <Font className=" pt-10 pb-16 ">
             Utilizing Global Talent Stream, Path to Canada expertly connects
             only the most qualified H-1Bs and global tech talent with Canadian
@@ -56,12 +56,12 @@ const Home: NextPage = () => {
           {/* grid =>  */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 pb-20 gap-10">
             <div>
-              <p className="text-red-600 text-xl	 font-bold tracking-wide	">
+              <div className="text-red-600 text-xl	 font-bold tracking-wide	">
                 TECH PROFESSIONALS
-              </p>
-              <p className=" text-2xl	font-bold  pb-10 pt-4 tracking-wide	">
+              </div>
+              <div className=" text-2xl	font-bold  pb-10 pt-4 tracking-wide	">
                 Facing immigration or permanent resident challenges in the US?
-              </p>
+              </div>
               <img
                 className="w-6/7"
                 src="https://path2canada.ca/wp-content/uploads/2022/05/home_techProfessionals.svg"
@@ -102,12 +102,12 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div>
-              <p className="text-red-600 text-xl  	font-bold tracking-wide	">
+              <div className="text-red-600 text-xl  	font-bold tracking-wide	">
                 CANADIAN EMPLOYERS
-              </p>
-              <p className="text-2xl pt-4  pb-10	font-bold tracking-wide	">
+              </div>
+              <div className="text-2xl pt-4  pb-10	font-bold tracking-wide	">
                 Struggling to access and to hire extraordinary, quality talent?
-              </p>
+              </div>
               <img
                 className="w-6/7"
                 src="https://path2canada.ca/wp-content/uploads/2022/05/home_employers.svg"
@@ -137,9 +137,9 @@ const Home: NextPage = () => {
         {/* Road Map Start */}
         <Wrapper className="bg-road-map-color text-white">
           <div className=" pt-20 pb-52">
-            <p className="lg:text-5xl text-3xl text-center   font-bold ">
+            <div className="lg:text-5xl text-3xl text-center   font-bold ">
               The Path to Canada Road Map
-            </p>
+            </div>
             <Font className="text-center pt-16 pb-16">
               From the moment you submit your online profile to the day you walk
               into your new office and start working in Canada, your journey
@@ -164,9 +164,9 @@ const Home: NextPage = () => {
         {/* testimonals */}
         <Wrapper className="pb-20 ">
           <div className=" pt-20 pb-16">
-            <p className="lg:text-5xl text-4xl text-center text-aqua-color  font-bold ">
+            <div className="lg:text-5xl text-4xl text-center text-aqua-color  font-bold ">
               What our candidates say
-            </p>
+            </div>
           </div>
           <div className="grid grid-cols-1 text-center md:grid-cols-[1fr_1fr] gap-4  ">
             <div>

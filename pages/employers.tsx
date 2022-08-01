@@ -50,7 +50,7 @@ const Employers = () => {
       </Wrapper>
       <Wrapper>
         <div className="pt-20 pb-20 text-center">
-          <p className="text-5xl font-bold text-aqua-color">What We Do?</p>
+          <div className="text-5xl font-bold text-aqua-color">What We Do?</div>
           <Font className="pt-5  pb-5">
             Path to Canada is solving the Canadian tech talent shortage. We have
             a vetted pool of international tech talent (75% US H-1B visa holders
@@ -87,7 +87,7 @@ const Employers = () => {
       {/* Canada  Secret  Section Starts*/}
       <Wrapper className="bg-aqua-color text-white pt-20 pb-20">
         <div className="text-center pb-20 pt-20">
-          <p className="text-5xl font-bold pb-5">Canada’s Secret Weapon</p>
+          <div className="text-5xl font-bold pb-5">Canada’s Secret Weapon</div>
           <Font>
             Global Talent Stream (GTS), Canada’s best-in-the-world immigration
             program, was created to specifically support the growth and
@@ -112,18 +112,18 @@ const Employers = () => {
             Two-year work visa (renewable) which includes an open work visa for
             spouse.
           </Font>
-          <p className="font-bold text-2xl pt-10">
+          <div className="font-bold text-2xl pt-10">
             Canada’s more flexible work visa and immigration systems, including
             the Global Talent Stream provide opportunities for foreign workers
             to move to Canada and live the “Canadian Dream”.
-          </p>
+          </div>
         </div>
       </Wrapper>
       <Wrapper>
         <div className="pt-20 pb-20">
-          <p className="text-5xl text-center font-bold text-aqua-color">
+          <div className="text-5xl text-center font-bold text-aqua-color">
             Fill your open roles quickly with highly experienced talent.
-          </p>
+          </div>
           <Font className="pt-10 pb-10 text-center">
             <Font className="">
               Combine Canada’s work class immigration program with our vetted
@@ -138,9 +138,9 @@ const Employers = () => {
         <div className="pb-24 pt-10">
           <div className="grid lg:grid-cols-[1fr_1fr]  grid-cols-1">
             <div className="bg-light-blue-color p-10">
-              <p className="lg:text-4xl text-3xl font-bold  text-red-600">
+              <div className="lg:text-4xl text-3xl font-bold  text-red-600">
                 Five Simple Steps
-              </p>
+              </div>
               <Font className="text-lg pb-6 pt-6 font-normal  ">
                 Extend your talent acquisition strategy to include Global and
                 U.S. talent. In 10 – 14 weeks, your open roles could be filled
@@ -165,17 +165,17 @@ const Employers = () => {
                   engineering team in Canada
                 </li>
               </Font>
-              <p className="text-2xl pt-10 font-bold  text-aqua-color">
+              <div className="text-2xl pt-10 font-bold  text-aqua-color">
                 Exclusive access to a new source of technical talent to help you
                 build your team in Canada
-              </p>
+              </div>
             </div>
             {/* form below */}
             <div className="border border-black">
               <div className=" p-10 bg-white text-black">
-                <p className="lg:text-5xl text-3xl font-bold  text-aqua-color">
+                <div className="lg:text-5xl text-3xl font-bold  text-aqua-color">
                   Book a Consultation
-                </p>
+                </div>
                 <Font className="pt-10 pb-10">
                   Got questions? Want to find out more? Let’s talk about how our
                   services can provide you access to a new pool of high-caliber

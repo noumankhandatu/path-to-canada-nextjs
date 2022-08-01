@@ -17,12 +17,12 @@ const Footer = () => {
       <Wrapper className="bg-footer-color pt-10 pb-10 text-white h-auto bg-[url('https://path2canada.ca/wp-content/uploads/2022/05/leaf.green_.footer.png')] bg-no-repeat bg-footer-img-position">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pb-20 pt-20">
           <div>
-            <p className="lg:text-5xl text-4xl font-bold tracking-wider">
+            <div className="lg:text-5xl text-4xl font-bold tracking-wider">
               Let’s stay
-            </p>
-            <p className="lg:text-5xl text-4xl font-bold pb-5 tracking-wider">
+            </div>
+            <div className="lg:text-5xl text-4xl font-bold pb-5 tracking-wider">
               Connected
-            </p>
+            </div>
             <Font>
               Sign up for our email newsletter to keep up-to-date on the
             </Font>
@@ -43,7 +43,9 @@ const Footer = () => {
               <Input text={"Last Name"} width={"w-full"} />
             </div>
             <Input text={"Last Name"} width={"w-full"} />
-            <p className="font-bold pb-5  pt-8">CHOOSE YOUR SUBSCRIPTION*</p>
+            <div className="font-bold pb-5  pt-8">
+              CHOOSE YOUR SUBSCRIPTION*
+            </div>
             <CheckBox text="FOR EMPLOYEES" />
             <div className="pt-3 -pb-3"></div>
             <CheckBox text="FOR EMPLOYERS" />

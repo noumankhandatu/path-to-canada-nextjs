@@ -20,20 +20,20 @@ const RedBannerSection = ({
     <div>
       <Wrapper className="bg-red-bgColor text-white pb-20">
         <div className=" pt-16 pb-16">
-          <p className="lg:text-4xl text-3xl text-center   font-bold ">
+          <div className="lg:text-4xl text-3xl text-center   font-bold ">
             We connect talent to hiring Canadian tech companies
-            <p className="break-words">Let’s work together.</p>
-          </p>
+            <div className="break-words">Let’s work together.</div>
+          </div>
         </div>
         <div className="grid grid-cols-1 text-center md:grid-cols-[1fr_0.1fr_1fr] ">
           <div className="flex flex-col items-center">
-            <p className="text-2xl font-bold">{Fheading}</p>
+            <div className="text-2xl font-bold">{Fheading}</div>
             <Font className="font-bold pt-5 pb-10">{Sheading}</Font>
             <Button text="Complete My Profile " dark />
           </div>
           <div className="w-hr h-22 bg-white"></div>
           <div className="flex flex-col items-center">
-            <p className="text-2xl font-bold">{Flabel}</p>
+            <div className="text-2xl font-bold">{Flabel}</div>
             <Font className="font-bold pt-5 pb-10">{Slabel}</Font>
             <Button text="Book a consultation" dark />
           </div>
@@ -42,12 +42,12 @@ const RedBannerSection = ({
       <Wrapper>
         <div className="pt-20 pb-20 grid lg:grid-cols-2 grid-col-1 gap-10">
           <div>
-            <p className="text-4xl text-aqua-color font-bold">
+            <div className="text-4xl text-aqua-color font-bold">
               Picking up your life and moving to a new country is HARD
-            </p>
-            <p className="text-2xl pb-10 pt-10 text-aqua-color font-bold">
+            </div>
+            <div className="text-2xl pb-10 pt-10 text-aqua-color font-bold">
               This is My Story
-            </p>
+            </div>
             <Font>
               I am the son of an immigrant. I have great respect for people who
               leave their home country to seek a better life. I was born in the
@@ -69,9 +69,9 @@ const RedBannerSection = ({
               workers to relocate to Canada and work for their same employer.
               Path to Canada is the second cross border company I have founded.
             </Font>
-            <p className="text-2xl pb-1 pt-1 text-aqua-color font-bold">
+            <div className="text-2xl pb-1 pt-1 text-aqua-color font-bold">
               Why I started Path to Canada
-            </p>
+            </div>
             <Font className="pt-4 pb-4">
               Speaking from experience, I know that moving to a new country is a
               huge decision. Some of you making this move have no choice, as you
