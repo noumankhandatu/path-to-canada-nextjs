@@ -1,5 +1,5 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
+import Link from "next/link";
 type HeaderItemProps = {
   text: string;
   id: number;
@@ -18,14 +18,9 @@ const HeaderItem = ({ text, id }: HeaderItemProps) => {
   if (id === 5) teleport = "aboutus";
 
   return (
-    <div
-      className={`${style}`}
-      // className={(navData) =>
-      //   navData.isActive ? `active ${style}` : `unactive ${style}`
-      // }
-    >
-      {text}
-    </div>
+    <Link href={`${teleport}`}>
+      <div className={`${style}`}> {text}</div>
+    </Link>
   );
 };
 

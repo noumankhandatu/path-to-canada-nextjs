@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { MenuIcon } from "@heroicons/react/solid";
 import HeaderItem from "../../Atoms/headerItem";
-// import { Link } from "react-router-dom";
+import Link from "next/link";
 import ScrollTopButton from "../../Molecules/scrollTopButton";
 import Drawer from "../Drawer/index";
 
@@ -46,13 +46,13 @@ const Header = () => {
         ref={headerRef}
         className="fixed ease-in-out duration-1000 bg-white z-10 top-0 left-0 right-0 p-3 pl-10 pr-10 flex items-center justify-between"
       >
-        {/* <Link to="/"> */}
+        <Link href="/">
           <img
-            className="ease-in-out duration-1000"
+            className="ease-in-out duration-1000 cursor-pointer"
             ref={imageRef}
             src="https://path2canada.ca/wp-content/uploads/2022/05/pathToCanada_logo.svg"
           />
-        {/* </Link> */}
+        </Link>
         <div className="md:hidden gap-4 sm:hidden lg:flex space-x-4 hidden ">
           {myArray.map((items, id) => {
             return <HeaderItem text={items} id={id} />;
