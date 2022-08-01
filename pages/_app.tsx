@@ -6,9 +6,9 @@ import "tailwindcss/tailwind.css";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <Component {...pageProps} />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
