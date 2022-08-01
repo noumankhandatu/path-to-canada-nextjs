@@ -3,14 +3,78 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Wrapper from "../scr/components/Organism/Wrapper";
 import RoadMapCards from "../scr/components/Molecules/RoadMapCards";
-import RoadMapArray from "../scr/components/array/roadmaparray";
 import TestimonialCard from "../scr/components/Molecules/testimonialCard";
 import HomePageFirstSection from "../scr/components/Organism/homePageFirstSection";
 import BlackBannerLeafSection from "../scr/components/Organism/blackBannerLeafSection";
 import RedLableText from "../scr/components/Atoms/redLableText";
 import Font from "../scr/components/Atoms/Font";
 import RedBannerSection from "../scr/components/Organism/redBannerSection";
-const Home: NextPage = () => {
+import Prismic from "prismic-javascript";
+import { Client } from "../prismic-configuration";
+const Home: NextPage = ({ home }: any) => {
+  const mapper = home?.results?.map((items) => {
+    return items?.data;
+  });
+  const bTitle = mapper?.map((items) => {
+    return items.slices[0].items[0].title;
+  });
+  const bDescription = mapper?.map((items) => {
+    return items.slices[0].items[0].description;
+  });
+  const backgroundImage = mapper?.map((items) => {
+    return items.slices[0].items[0].backgroundImage.url;
+  });
+  const title = mapper[0].title;
+  const description = mapper[0].description;
+  const textOne = mapper[0].textOne;
+  const textTwo = mapper[0].textTwo;
+  const textThree = mapper[0].textThree;
+  const textFour = mapper[0].textFour;
+
+  const RoadMapArray = [
+    {
+      firstImg:
+        "https://path2canada.ca/wp-content/uploads/2022/05/roadmap_01.svg",
+      secondImg:
+        "https://path2canada.ca/wp-content/uploads/2022/05/roadmap_02.svg",
+      countOne: 1,
+      countTwo: 2,
+    },
+    {
+      firstImg:
+        "https://path2canada.ca/wp-content/uploads/2022/05/roadmap_03.svg",
+      secondImg:
+        "https://path2canada.ca/wp-content/uploads/2022/05/roadmap_04.svg",
+      countOne: 3,
+      countTwo: 4,
+    },
+    {
+      firstImg: " ",
+      secondImg: "",
+      countOne: 5,
+      countTwo: 6,
+    },
+    {
+      firstImg:
+        "https://path2canada.ca/wp-content/uploads/2022/05/roadmap_05.svg",
+      secondImg: "",
+      countOne: 7,
+      countTwo: 8,
+    },
+  ];
+  const imageOne = mapper[0].imageOne.url;
+  const imageTwo = mapper[0].imageTwo.url;
+  const liOne = mapper[0].liOne;
+  const liTwo = mapper[0].liTwo;
+  const liThree = mapper[0].liThree;
+  const liFour = mapper[0].liFour;
+  const liFive = mapper[0].liFive;
+  const liSix = mapper[0].liSix;
+  const liSeven = mapper[0].liSeven;
+  const colorTextOne = mapper[0].colorTextOne;
+  const colorTextTwo = mapper[0].colorTextTwo;
+  const roadMapTitle = mapper[0].roadMapTitle;
+  const roadMapDescription = mapper[0].roadMapDescription;
   return (
     <div>
       <Head>
@@ -27,108 +91,72 @@ const Home: NextPage = () => {
       </Head>
       <div className="pt-40">
         <HomePageFirstSection
-          heading={`Solving the Canadian tech talent shortage.`}
-          paragraph={
-            "We are a marketplace that expertly matches highly experienced global talent with hiring Canadian companies. Relocating talent into Canada using a world-class immigration program is our specialty."
-          }
-          bgImage={`https://path2canada.ca/wp-content/uploads/2022/05/home_hero.svg`}
+          heading={`${bTitle ? bTitle : `pending`}`}
+          paragraph={bDescription ? bDescription : `pending`}
+          bgImage={`${backgroundImage}`}
           showFirstBtn={true}
           showSecondBtn={true}
         />
         {/* Second Section Started  => */}
         <Wrapper className="bg-light-red">
           <div className="text-4xl text-center font-bold pt-20  pb-10  text-cyan-900">
-            Path to Canada has a deep understanding
-            <div className="breaks-words">
-              of the current hiring challenges in the
-            </div>
-            <div className="breaks-words ">North American tech ecosystem.</div>
+            {title ? title : `pending`}
           </div>
           <Font className=" pt-10 pb-16 ">
-            Utilizing Global Talent Stream, Path to Canada expertly connects
-            only the most qualified H-1Bs and global tech talent with Canadian
-            tech companies. Global Talent Stream is the best work visa program
-            in the world, and it can help Canadian tech companies scale and
-            recruit the best talent. It truly is Canada’s secret weapon — it is
-            an unknown resource that can quickly provide immigration solutions
-            for qualified tech workers.
+            {description ? description : `pending`}
           </Font>
           {/* grid =>  */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 pb-20 gap-10">
             <div>
               <div className="text-red-600 text-xl	 font-bold tracking-wide	">
-                TECH PROFESSIONALS
+                {textOne ? textOne : `pending`}
               </div>
               <div className=" text-2xl	font-bold  pb-10 pt-4 tracking-wide	">
-                Facing immigration or permanent resident challenges in the US?
+                {textThree ? textThree : `pending`}
               </div>
               <img
                 className="w-6/7"
-                src="https://path2canada.ca/wp-content/uploads/2022/05/home_techProfessionals.svg"
+                src={imageOne ? imageOne : `pending`}
                 alt=""
               />
               <Font className="pt-10 pb-1 list-disc	">
-                <li>
-                  Have an H-1B work visa, or working in the US but are tired of
-                  waiting for a US Green Card?
-                </li>
+                <li>{liOne ? liOne : `pending`}</li>
               </Font>
               <Font className=" pb-1 list-disc	">
-                <li>
-                  Disillusioned with the US immigration system and looking for a
-                  way to stay in North America?
-                </li>
+                <li>{liTwo ? liTwo : `pending`}</li>
               </Font>
               <Font className=" pb-1 list-disc	">
-                <li>
-                  Already tried the US immigration option and have been forced
-                  to exit and move back to your home country? Open to exploring
-                  Canada as a permanent option for living and working?
-                </li>
+                <li>{liThree ? liThree : `pending`}</li>
               </Font>
               <Font className=" pb-1 list-disc	">
-                <li>
-                  Open to exploring Canada as a permanent option for living and
-                  working?
-                </li>
+                <li>{liFour ? liFour : `pending`}</li>
               </Font>
-              <Font>
-                If any of the above applies to you, complete your profile today
-                and let us match you with a Canadian Tech Company who is
-                actively hiring for someone exactly like you.
-              </Font>
+              <Font>{liFive ? liFive : `pending`}</Font>
               <div className="mt-10 mb-10">
-                <RedLableText text="AM I A CANDIDATE?" />
+                <RedLableText text={colorTextOne ? colorTextOne : `pending`} />
               </div>
             </div>
             <div>
               <div className="text-red-600 text-xl  	font-bold tracking-wide	">
-                CANADIAN EMPLOYERS
+                {textTwo ? textTwo : `pending`}
               </div>
               <div className="text-2xl pt-4  pb-10	font-bold tracking-wide	">
-                Struggling to access and to hire extraordinary, quality talent?
+                {textFour ? textFour : `pending`}
               </div>
               <img
                 className="w-6/7"
-                src="https://path2canada.ca/wp-content/uploads/2022/05/home_employers.svg"
+                src={imageTwo ? imageTwo : `pending`}
                 alt=""
               />
-              <Font className="pt-10 pb-10 ">
-                Path to Canada has a Tech Talent Relocation Program that
-                utilizes Canada’s Global Talent Stream, the best immigration
-                program in the world, that was specifically created to support
-                Canada’s tech sector.
+              <Font className="pt-10 pb-10  leading-loose">
+                {liSix ? liSix : `pending`}
               </Font>
               <Font>
-                We match our candidates to your open roles and provide you with
-                a curated, carefully vetted group of top-quality, significantly
-                <Font>
-                  experienced and educated US and global talent. These highly
-                  skilled workers are ready to move to Canada to continue their
-                  tech careers.
-                </Font>
+                {liSeven ? liSeven : `pending`}
                 <div className="mt-10 mb-10">
-                  <RedLableText text=" HELP ME FIND A CANDIDATE" />
+                  <RedLableText
+                    text={colorTextTwo ? colorTextTwo : `pending`}
+                  />
                 </div>
               </Font>
             </div>
@@ -138,16 +166,10 @@ const Home: NextPage = () => {
         <Wrapper className="bg-road-map-color text-white">
           <div className=" pt-20 pb-52">
             <div className="lg:text-5xl text-3xl text-center   font-bold ">
-              The Path to Canada Road Map
+              {roadMapTitle ? roadMapTitle : `pending`}
             </div>
             <Font className="text-center pt-16 pb-16">
-              From the moment you submit your online profile to the day you walk
-              into your new office and start working in Canada, your journey
-              will take approximately 90 days. Compared to waiting decades to
-              get a green card in the US, the Canada’s Global Talent Stream
-              process is relatively quick. Path to Canada partners with clients
-              and employees providing high-touch individualized service every
-              step of the way.
+              {roadMapDescription ? roadMapDescription : `pending`}
             </Font>
             {RoadMapArray.map((items: any) => {
               return <RoadMapCards {...items} />;
@@ -203,13 +225,13 @@ const Home: NextPage = () => {
 export default Home;
 
 // this function is called everytime a request/refresh is made
-// export async function getServerSideProps() {
-//   const home = await Client().query(
-//     Prismic.Predicates.at("document.type", "home")
-//   );
-//   return {
-//     props: {
-//       home,
-//     },
-//   };
-// }
+export async function getServerSideProps() {
+  const home = await Client().query(
+    Prismic.Predicates.at("document.type", "home")
+  );
+  return {
+    props: {
+      home,
+    },
+  };
+}

@@ -1,0 +1,9 @@
+import MyComponent from '../../../../slices/HomeBanner';
+
+export default {
+  title: 'slices/HomeBanner'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"home_banner","items":[{"backgroundImage":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"},"title":"integrate dot-com web-readiness","description":"maximize dynamic content"},{"backgroundImage":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"},"title":"utilize integrated e-markets","description":"synthesize turn-key content"},{"backgroundImage":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"},"title":"maximize real-time e-business","description":"visualize innovative vortals"}],"primary":{},"id":"_Default"}} />
+_Default.storyName = 'Default'

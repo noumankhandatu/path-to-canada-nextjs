@@ -1,6 +1,6 @@
 import Prismic from "prismic-javascript";
 
-export const apiEndpoint = "https://codeminimalist.prismic.io/api/v2";
+export const apiEndpoint = "https://pathtocanada.prismic.io/api/v2";
 
 export const accessToken = "";
 

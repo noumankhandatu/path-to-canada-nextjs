@@ -1,0 +1,42 @@
+{
+  "id": "c9e3f4ee-6085-4e47-b5fe-a287eacce977",
+  "uid": "voluptatum-autem-et",
+  "type": "home",
+  "data": {
+    "title": "repurpose innovative convergence",
+    "description": "evolve world-class models",
+    "textOne": "synthesize scalable mindshare",
+    "textTwo": "utilize vertical web-readiness",
+    "textThree": "synthesize innovative schemas",
+    "textFour": "orchestrate vertical synergies",
+    "imageOne": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
+    },
+    "imageTwo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+    },
+    "liOne": "matrix cross-media web services",
+    "liTwo": "leverage B2B technologies",
+    "liThree": "revolutionize interactive applications",
+    "liFour": "extend world-class markets",
+    "liFive": "repurpose global infomediaries",
+    "liSix": "synergize proactive ROI",
+    "liSeven": "extend interactive infrastructures",
+    "colorTextOne": "deploy viral markets",
+    "colorTextTwo": "extend robust platforms",
+    "roadMapTitle": "repurpose intuitive content",
+    "roadMapDescription": "engineer bricks-and-clicks niches"
+  }
+}

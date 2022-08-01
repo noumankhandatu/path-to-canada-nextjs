@@ -1,0 +1,13 @@
+{
+  "_cts": {
+    "home": {}
+  },
+  "slices": {
+    "HomeBanner": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    }
+  }
+}

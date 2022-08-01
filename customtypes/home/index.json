@@ -1,0 +1,156 @@
+{
+  "id": "home",
+  "label": "home",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": ""
+        }
+      },
+      "textOne": {
+        "type": "Text",
+        "config": {
+          "label": "Text One",
+          "placeholder": ""
+        }
+      },
+      "textTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Text Two",
+          "placeholder": ""
+        }
+      },
+      "textThree": {
+        "type": "Text",
+        "config": {
+          "label": "Text Three",
+          "placeholder": ""
+        }
+      },
+      "textFour": {
+        "type": "Text",
+        "config": {
+          "label": "Text Four",
+          "placeholder": ""
+        }
+      },
+      "imageOne": {
+        "type": "Image",
+        "config": {
+          "label": "Image One",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imageTwo": {
+        "type": "Image",
+        "config": {
+          "label": "Image Two",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "liOne": {
+        "type": "Text",
+        "config": {
+          "label": "Li One",
+          "placeholder": ""
+        }
+      },
+      "liTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Li Two",
+          "placeholder": ""
+        }
+      },
+      "liThree": {
+        "type": "Text",
+        "config": {
+          "label": "Li Three",
+          "placeholder": ""
+        }
+      },
+      "liFour": {
+        "type": "Text",
+        "config": {
+          "label": "Li Four",
+          "placeholder": ""
+        }
+      },
+      "liFive": {
+        "type": "Text",
+        "config": {
+          "label": "Li Five",
+          "placeholder": ""
+        }
+      },
+      "liSix": {
+        "type": "Text",
+        "config": {
+          "label": "Li Six",
+          "placeholder": ""
+        }
+      },
+      "liSeven": {
+        "type": "Text",
+        "config": {
+          "label": "Li Seven",
+          "placeholder": ""
+        }
+      },
+      "colorTextOne": {
+        "type": "Text",
+        "config": {
+          "label": "Color Text One",
+          "placeholder": ""
+        }
+      },
+      "colorTextTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Color Text Two",
+          "placeholder": ""
+        }
+      },
+      "roadMapTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Road Map Title",
+          "placeholder": ""
+        }
+      },
+      "roadMapDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Road Map Description",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "home_banner": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

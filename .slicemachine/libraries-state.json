@@ -1,0 +1,113 @@
+{
+  "slices": {
+    "components": {
+      "home_banner": {
+        "library": "slices",
+        "id": "home_banner",
+        "name": "HomeBanner",
+        "description": "HomeBanner",
+        "model": {
+          "id": "home_banner",
+          "type": "SharedSlice",
+          "name": "HomeBanner",
+          "description": "HomeBanner",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "HomeBanner",
+              "primary": {},
+              "items": {
+                "backgroundImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Background Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "home_banner",
+            "items": [
+              {
+                "backgroundImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+                },
+                "title": "integrate dot-com web-readiness",
+                "description": "maximize dynamic content"
+              },
+              {
+                "backgroundImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+                },
+                "title": "utilize integrated e-markets",
+                "description": "synthesize turn-key content"
+              },
+              {
+                "backgroundImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": "Placeholder image",
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
+                },
+                "title": "maximize real-time e-business",
+                "description": "visualize innovative vortals"
+              }
+            ],
+            "primary": {}
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/home/xin/React-Mode/path-to-canada-nextjs/.slicemachine/assets/slices/HomeBanner/default/preview.png",
+            "width": 800,
+            "height": 48
+          }
+        }
+      }
+    }
+  }
+}
