@@ -22,7 +22,9 @@ const Jobs = () => {
         showFirstBtn={true}
       />
       <Wrapper className="bg-aqua-color pt-20 pb-20 text-white text-center">
-        <div className="text-5xl font-bold">How we help you get a Canadian job</div>
+        <div className="text-5xl font-bold">
+          How we help you get a Canadian job
+        </div>
         <div className="flex flex-col  lg:flex-row justify-center items-center lg:items-start pt-20">
           {StepperArray.map((items: any) => {
             const { count, paragraph, heading } = items;

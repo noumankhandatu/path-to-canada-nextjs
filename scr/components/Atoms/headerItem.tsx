@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 type HeaderItemProps = {
   text: string;
@@ -19,7 +19,7 @@ const HeaderItem = ({ text, id }: HeaderItemProps) => {
 
   return (
     <Link href={`${teleport}`}>
-      <div className={`${style}`}> {text}</div>
+      <div className={`${style}`}>{text}</div>
     </Link>
   );
 };

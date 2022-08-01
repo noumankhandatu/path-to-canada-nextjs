@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <title>Path to Canada</title>
         <link
           rel="icon"
-          href="https://codeminimalist.atlassian.net/jira/software/projects/COM/boards/3?selectedIssue=COM-5"
+          href="https://path2canada.ca/wp-content/uploads/2022/05/cropped-pathToCanada_favicon-32x32.png"
         />
         <script
           async
