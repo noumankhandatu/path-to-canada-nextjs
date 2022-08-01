@@ -30,36 +30,48 @@ const Home: NextPage = ({ home }: any) => {
   const textTwo = mapper[0].textTwo;
   const textThree = mapper[0].textThree;
   const textFour = mapper[0].textFour;
-
+  const one = mapper[0].one;
+  const two = mapper[0].two;
+  const three = mapper[0].three;
+  const four = mapper[0].four;
+  const five = mapper[0].five;
+  const six = mapper[0].six;
+  const roadTextOne = mapper[0].roadTextOne;
+  const roadTextTwo = mapper[0].roadTextTwo;
+  const roadTextThree = mapper[0].roadTextThree;
+  const roadTextFour = mapper[0].roadTextFour;
+  const roadTextFive = mapper[0].roadTextFive;
+  const roadTextSix = mapper[0].roadTextSix;
+  const roadImageOne = mapper[0].roadImageOne.url;
+  const roadImageTwo = mapper[0].roadImageTwo.url;
+  const roadImageThree = mapper[0].roadImageThree.url;
+  const roadImageFour = mapper[0].roadImageFour.url;
+  const roadImageFive = mapper[0].roadImageFive.url;
+  const roadImageSix = mapper[0].roadImageSix.url;
   const RoadMapArray = [
     {
-      firstImg:
-        "https://path2canada.ca/wp-content/uploads/2022/05/roadmap_01.svg",
-      secondImg:
-        "https://path2canada.ca/wp-content/uploads/2022/05/roadmap_02.svg",
-      countOne: 1,
-      countTwo: 2,
+      firstImg: roadImageOne ? roadImageOne : `pending`,
+      secondImg: roadImageTwo ? roadImageTwo : `pending`,
+      countOne: one ? one : `pending`,
+      countTwo: two ? two : `pending`,
+      textOne: roadTextOne ? roadTextOne : `pending`,
+      textTwo: roadTextFour ? roadTextFour : `pending`,
     },
     {
-      firstImg:
-        "https://path2canada.ca/wp-content/uploads/2022/05/roadmap_03.svg",
-      secondImg:
-        "https://path2canada.ca/wp-content/uploads/2022/05/roadmap_04.svg",
-      countOne: 3,
-      countTwo: 4,
+      firstImg: roadImageThree ? roadImageThree : `pending`,
+      secondImg: roadImageFour ? roadImageFour : `pending`,
+      countOne: three ? three : `pending`,
+      countTwo: four ? four : `pending`,
+      textOne: roadTextTwo ? roadTextTwo : `pending`,
+      textTwo: roadTextFive ? roadTextFive : `pending`,
     },
     {
-      firstImg: " ",
-      secondImg: "",
-      countOne: 5,
-      countTwo: 6,
-    },
-    {
-      firstImg:
-        "https://path2canada.ca/wp-content/uploads/2022/05/roadmap_05.svg",
-      secondImg: "",
-      countOne: 7,
-      countTwo: 8,
+      firstImg: roadImageFive ? roadImageFive : `pending`,
+      secondImg: roadImageSix ? roadImageSix : `pending`,
+      countOne: five ? five : `pending`,
+      countTwo: six ? six : `pending`,
+      textOne: roadTextThree ? roadTextThree : `pending`,
+      textTwo: roadTextSix ? roadTextSix : `pending`,
     },
   ];
   const imageOne = mapper[0].imageOne.url;

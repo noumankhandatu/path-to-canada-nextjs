@@ -1,14 +1,14 @@
 {
-  "id": "c9e3f4ee-6085-4e47-b5fe-a287eacce977",
-  "uid": "voluptatum-autem-et",
+  "id": "bb2808f3-48f1-4e45-9c39-25a1a4af22e8",
+  "uid": "quasi-similique-a",
   "type": "home",
   "data": {
-    "title": "repurpose innovative convergence",
-    "description": "evolve world-class models",
-    "textOne": "synthesize scalable mindshare",
-    "textTwo": "utilize vertical web-readiness",
-    "textThree": "synthesize innovative schemas",
-    "textFour": "orchestrate vertical synergies",
+    "title": "expedite web-enabled content",
+    "description": "deliver B2B channels",
+    "textOne": "cultivate global e-services",
+    "textTwo": "unleash user-centric relationships",
+    "textThree": "unleash B2B action-items",
+    "textFour": "aggregate impactful infomediaries",
     "imageOne": {
       "dimensions": {
         "width": 900,
@@ -16,7 +16,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
     },
     "imageTwo": {
       "dimensions": {
@@ -25,18 +25,84 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
     },
-    "liOne": "matrix cross-media web services",
-    "liTwo": "leverage B2B technologies",
-    "liThree": "revolutionize interactive applications",
-    "liFour": "extend world-class markets",
-    "liFive": "repurpose global infomediaries",
-    "liSix": "synergize proactive ROI",
-    "liSeven": "extend interactive infrastructures",
-    "colorTextOne": "deploy viral markets",
-    "colorTextTwo": "extend robust platforms",
-    "roadMapTitle": "repurpose intuitive content",
-    "roadMapDescription": "engineer bricks-and-clicks niches"
+    "liOne": "morph value-added blockchains",
+    "liTwo": "recontextualize killer relationships",
+    "liThree": "incubate robust architectures",
+    "liFour": "expedite web-enabled synergies",
+    "liFive": "unleash killer architectures",
+    "liSix": "innovate mission-critical experiences",
+    "liSeven": "recontextualize extensible users",
+    "colorTextOne": "grow robust relationships",
+    "colorTextTwo": "innovate wireless synergies",
+    "roadMapTitle": "streamline 24/7 channels",
+    "roadMapDescription": "optimize intuitive synergies",
+    "roadImageOne": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
+    },
+    "roadTextOne": "reintermediate back-end channels",
+    "roadImageTwo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+    },
+    "roadTextTwo": "morph extensible solutions",
+    "roadImageThree": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
+    },
+    "roadTextThree": "empower synergistic networks",
+    "roadImageFour": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
+    },
+    "roadTextFour": "embrace 24/7 models",
+    "roadImageFive": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
+    },
+    "roadTextFive": "iterate distributed e-markets",
+    "roadImageSix": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
+    },
+    "roadTextSix": "reintermediate wireless content",
+    "one": "harness distributed niches",
+    "two": "syndicate robust experiences",
+    "three": "seize mission-critical action-items",
+    "four": "drive virtual supply-chains",
+    "five": "generate plug-and-play web-readiness",
+    "six": "syndicate cross-platform supply-chains"
   }
 }

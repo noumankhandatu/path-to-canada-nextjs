@@ -8,7 +8,7 @@ const RoadMapCards = ({ ...items }) => {
   useEffect(() => {
     AOS.init();
   }, []);
-  const { firstImg, secondImg } = items;
+  const { firstImg, secondImg, textOne, textTwo } = items;
   return (
     <div className="grid grid-cols-1 md:grid-cols-[1fr_0.1fr_1fr] gap-10">
       <div>
@@ -19,11 +19,7 @@ const RoadMapCards = ({ ...items }) => {
           src={firstImg}
           alt=""
         />
-        <Font>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio,
-          asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Provident, qui?
-        </Font>
+        <Font>{textOne}</Font>
       </div>
       <div>
         <Line {...items} />
@@ -37,11 +33,7 @@ const RoadMapCards = ({ ...items }) => {
             src={secondImg}
             alt=""
           />
-          <Font>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio,
-            asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Provident, qui?
-          </Font>
+          <Font>{textTwo}</Font>
         </div>
       </div>
     </div>

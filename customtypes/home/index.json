@@ -140,6 +140,138 @@
           "placeholder": ""
         }
       },
+      "roadImageOne": {
+        "type": "Image",
+        "config": {
+          "label": "Road Image One",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "roadTextOne": {
+        "type": "Text",
+        "config": {
+          "label": "Road Text One",
+          "placeholder": ""
+        }
+      },
+      "roadImageTwo": {
+        "type": "Image",
+        "config": {
+          "label": "Road Image Two",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "roadTextTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Road Text Two",
+          "placeholder": ""
+        }
+      },
+      "roadImageThree": {
+        "type": "Image",
+        "config": {
+          "label": "Road Image Three",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "roadTextThree": {
+        "type": "Text",
+        "config": {
+          "label": "Road Text Three",
+          "placeholder": ""
+        }
+      },
+      "roadImageFour": {
+        "type": "Image",
+        "config": {
+          "label": "Road Image Four",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "roadTextFour": {
+        "type": "Text",
+        "config": {
+          "label": "Road Text Four",
+          "placeholder": ""
+        }
+      },
+      "roadImageFive": {
+        "type": "Image",
+        "config": {
+          "label": "Road Image Five",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "roadTextFive": {
+        "type": "Text",
+        "config": {
+          "label": "Road Text Five",
+          "placeholder": ""
+        }
+      },
+      "roadImageSix": {
+        "type": "Image",
+        "config": {
+          "label": "Road Image Six",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "roadTextSix": {
+        "type": "Text",
+        "config": {
+          "label": "Road Text Six",
+          "placeholder": ""
+        }
+      },
+      "one": {
+        "type": "Text",
+        "config": {
+          "label": "One",
+          "placeholder": ""
+        }
+      },
+      "two": {
+        "type": "Text",
+        "config": {
+          "label": "Two",
+          "placeholder": ""
+        }
+      },
+      "three": {
+        "type": "Text",
+        "config": {
+          "label": "Three",
+          "placeholder": ""
+        }
+      },
+      "four": {
+        "type": "Text",
+        "config": {
+          "label": "Four",
+          "placeholder": ""
+        }
+      },
+      "five": {
+        "type": "Text",
+        "config": {
+          "label": "Five",
+          "placeholder": ""
+        }
+      },
+      "six": {
+        "type": "Text",
+        "config": {
+          "label": "Six",
+          "placeholder": ""
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
