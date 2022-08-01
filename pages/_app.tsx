@@ -3,13 +3,15 @@ import Header from "../scr/components/Organism/Header";
 import Footer from "../scr/components/Organism/Footer";
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
+import store from "../Redux/store";
+import { Provider } from "react-redux";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div>
+    <Provider store={store}>
       <Header />
       <Component {...pageProps} />
       <Footer />
-    </div>
+    </Provider>
   );
 }
 
