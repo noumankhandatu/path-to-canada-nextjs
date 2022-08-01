@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Line from "../Atoms/line";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Font from "../Atoms/Font";
-// AOS.init();
+
 const RoadMapCards = ({ ...items }) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const { firstImg, secondImg } = items;
   return (
     <div className="grid grid-cols-1 md:grid-cols-[1fr_0.1fr_1fr] gap-10">

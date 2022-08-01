@@ -6,7 +6,7 @@ import Font from "../scr/components/Atoms/Font";
 import Banner from "../scr/components/Atoms/redBanner";
 import Accordion from "../scr/components/Molecules/accordion";
 import AccordionArray from "../scr/components/array/accordionArray";
-const FAQ = () => {
+const FAQS = () => {
   return (
     <div className="pt-40">
       <HomePageFirstSection
@@ -59,4 +59,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default FAQS;
