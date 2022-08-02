@@ -343,6 +343,74 @@
           "placeholder": ""
         }
       },
+      "testimonialImageOne": {
+        "type": "Image",
+        "config": {
+          "label": "Testimonial Image One",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "IconOne": {
+        "type": "Image",
+        "config": {
+          "label": "Icon One",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "nameOne": {
+        "type": "Text",
+        "config": {
+          "label": "Name One",
+          "placeholder": ""
+        }
+      },
+      "descriptionOne": {
+        "type": "Text",
+        "config": {
+          "label": "Description One",
+          "placeholder": ""
+        }
+      },
+      "testimonialImageTwo": {
+        "type": "Image",
+        "config": {
+          "label": "Testimonial Image Two",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "IconTwo": {
+        "type": "Image",
+        "config": {
+          "label": "Icon Two",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "descriptionTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Description Two",
+          "placeholder": ""
+        }
+      },
+      "nameTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Name Two",
+          "placeholder": ""
+        }
+      },
+      "ImageLeaf": {
+        "type": "Image",
+        "config": {
+          "label": "Image Leaf",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

@@ -104,6 +104,16 @@ const Home: NextPage = ({ home }: any) => {
   const colorTextTwo = mapper[0].colorTextTwo;
   const roadMapTitle = mapper[0].roadMapTitle;
   const roadMapDescription = mapper[0].roadMapDescription;
+
+  const testimonialImageOne = mapper[0].testimonialImageOne.url;
+  const IconOne = mapper[0].IconOne.url;
+  const nameOne = mapper[0].nameOne;
+  const descriptionOne = mapper[0].descriptionOne;
+
+  const testimonialImageTwo = mapper[0].testimonialImageTwo.url;
+  const IconTwo = mapper[0].IconTwo.url;
+  const descriptionTwo = mapper[0].descriptionTwo;
+  const nameTwo = mapper[0].nameTwo;
   return (
     <div>
       <Head>
@@ -219,27 +229,25 @@ const Home: NextPage = ({ home }: any) => {
               What our candidates say
             </div>
           </div>
-          <div className="grid grid-cols-1 text-center md:grid-cols-[1fr_1fr] gap-4  ">
+          <div className="grid grid-cols-1 text-center justify-center justify-items-center md:grid-cols-[1fr_1fr] gap-4  ">
             <div>
               <TestimonialCard
-                text="“Having to leave the US by December due to a denied H-1B was obviously a stressful situation. I was able to secure a Canadian work permit using Global Talent Stream quickly. I can now continue my tech career in Canada.”"
-                iconImg={
-                  "https://path2canada.ca/wp-content/uploads/2022/05/quotes-img.png"
-                }
+                text={descriptionOne ? descriptionOne : `pending`}
+                iconImg={IconOne ? IconOne : `pending`}
                 avatarImg={
-                  "https://path2canada.ca/wp-content/uploads/2022/05/Deepak-Bandi-150x150-1.jpeg"
+                  testimonialImageOne ? testimonialImageOne : `pending`
                 }
+                name={nameOne ? nameOne : `pending`}
               />
             </div>
             <div>
               <TestimonialCard
-                text="I am writing this testimonial to show my appreciation and gratitude towards the Path 2 Canada team who helped me immensely in getting Canadian work permit visa using Global talent stream. Got a prompt response for all the questions I had in the immigration process. They have a highly skilled expert team to provide end to end immigration services. "
-                iconImg={
-                  "https://path2canada.ca/wp-content/uploads/2022/05/quotes-img.png"
-                }
+                text={descriptionTwo ? descriptionTwo : `pending`}
+                iconImg={IconTwo ? IconTwo : `pending`}
                 avatarImg={
-                  "https://path2canada.ca/wp-content/uploads/2022/05/Gaurav-Saraswat-150x150-1.jpeg"
+                  testimonialImageTwo ? testimonialImageTwo : `pending`
                 }
+                name={nameTwo ? nameTwo : `pending`}
               />
             </div>
           </div>
