@@ -1,0 +1,162 @@
+{
+  "id": "jobs",
+  "label": "jobs",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "headingStepper": {
+        "type": "Text",
+        "config": {
+          "label": "Heading Stepper",
+          "placeholder": ""
+        }
+      },
+      "stepperFirstCount": {
+        "type": "Text",
+        "config": {
+          "label": "Stepper First Count",
+          "placeholder": ""
+        }
+      },
+      "stepperFirstTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Stepper First Title",
+          "placeholder": ""
+        }
+      },
+      "stepperFirstDes": {
+        "type": "Text",
+        "config": {
+          "label": "Stepper First Des",
+          "placeholder": ""
+        }
+      },
+      "stepperSecondTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Stepper Second Title",
+          "placeholder": ""
+        }
+      },
+      "stepperSecondCount": {
+        "type": "Text",
+        "config": {
+          "label": "Stepper Second Count",
+          "placeholder": ""
+        }
+      },
+      "stepperSecondDes": {
+        "type": "Text",
+        "config": {
+          "label": "Stepper Second Des",
+          "placeholder": ""
+        }
+      },
+      "stepperThirdTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Stepper Third Title",
+          "placeholder": ""
+        }
+      },
+      "stepperThirdCount": {
+        "type": "Text",
+        "config": {
+          "label": "Stepper Third Count",
+          "placeholder": ""
+        }
+      },
+      "stepperThirdDes": {
+        "type": "Text",
+        "config": {
+          "label": "Stepper Third Des",
+          "placeholder": ""
+        }
+      },
+      "stepperFourthTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Stepper Fourth Title",
+          "placeholder": ""
+        }
+      },
+      "stepperForuthCount": {
+        "type": "Text",
+        "config": {
+          "label": "Stepper Foruth Count",
+          "placeholder": ""
+        }
+      },
+      "stepperFourthDes": {
+        "type": "Text",
+        "config": {
+          "label": "Stepper Fourth Des",
+          "placeholder": ""
+        }
+      },
+      "officeImage": {
+        "type": "Image",
+        "config": {
+          "label": "Office Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "teamlead": {
+        "type": "Text",
+        "config": {
+          "label": "Teamlead",
+          "placeholder": ""
+        }
+      },
+      "btnApply": {
+        "type": "Text",
+        "config": {
+          "label": "Btn Apply",
+          "placeholder": ""
+        }
+      },
+      "FullTime": {
+        "type": "Text",
+        "config": {
+          "label": "Full Time",
+          "placeholder": ""
+        }
+      },
+      "location": {
+        "type": "Text",
+        "config": {
+          "label": "Location",
+          "placeholder": ""
+        }
+      },
+      "date": {
+        "type": "Text",
+        "config": {
+          "label": "Date",
+          "placeholder": ""
+        }
+      },
+      "descriptions": {
+        "type": "Text",
+        "config": {
+          "label": "Descriptions",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "home_banner": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}
