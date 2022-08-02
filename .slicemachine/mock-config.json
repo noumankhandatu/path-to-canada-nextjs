@@ -1,7 +1,8 @@
 {
   "_cts": {
     "home": {},
-    "employee": {}
+    "employee": {},
+    "employers": {}
   },
   "slices": {
     "HomeBanner": {
