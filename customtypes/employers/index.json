@@ -1,0 +1,199 @@
+{
+  "id": "employers",
+  "label": "employers",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "titleOne": {
+        "type": "Text",
+        "config": {
+          "label": "Title One",
+          "placeholder": ""
+        }
+      },
+      "desOne": {
+        "type": "Text",
+        "config": {
+          "label": "Des One",
+          "placeholder": ""
+        }
+      },
+      "desTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Des Two",
+          "placeholder": ""
+        }
+      },
+      "iframes": {
+        "type": "Text",
+        "config": {
+          "label": "Iframes",
+          "placeholder": ""
+        }
+      },
+      "lableOne": {
+        "type": "Text",
+        "config": {
+          "label": "Lable One",
+          "placeholder": ""
+        }
+      },
+      "lableTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Lable Two",
+          "placeholder": ""
+        }
+      },
+      "lableThree": {
+        "type": "Text",
+        "config": {
+          "label": "Lable Three",
+          "placeholder": ""
+        }
+      },
+      "btnText": {
+        "type": "Text",
+        "config": {
+          "label": "Btn Text",
+          "placeholder": ""
+        }
+      },
+      "textOne": {
+        "type": "Text",
+        "config": {
+          "label": "Text One",
+          "placeholder": ""
+        }
+      },
+      "textTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Text Two",
+          "placeholder": ""
+        }
+      },
+      "textThree": {
+        "type": "Text",
+        "config": {
+          "label": "Text Three",
+          "placeholder": ""
+        }
+      },
+      "textFour": {
+        "type": "Text",
+        "config": {
+          "label": "Text Four",
+          "placeholder": ""
+        }
+      },
+      "textFive": {
+        "type": "Text",
+        "config": {
+          "label": "Text Five",
+          "placeholder": ""
+        }
+      },
+      "textSix": {
+        "type": "Text",
+        "config": {
+          "label": "Text Six",
+          "placeholder": ""
+        }
+      },
+      "countOne": {
+        "type": "Text",
+        "config": {
+          "label": "Count One",
+          "placeholder": ""
+        }
+      },
+      "countTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Count Two",
+          "placeholder": ""
+        }
+      },
+      "countThree": {
+        "type": "Text",
+        "config": {
+          "label": "Count Three",
+          "placeholder": ""
+        }
+      },
+      "countHeadingOne": {
+        "type": "Text",
+        "config": {
+          "label": "Count Heading One",
+          "placeholder": ""
+        }
+      },
+      "countHeadingTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Count Heading Two",
+          "placeholder": ""
+        }
+      },
+      "countHeadingThree": {
+        "type": "Text",
+        "config": {
+          "label": "Count Heading Three",
+          "placeholder": ""
+        }
+      },
+      "countDesOne": {
+        "type": "Text",
+        "config": {
+          "label": "Count Des One",
+          "placeholder": ""
+        }
+      },
+      "countDesTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Count Des Two",
+          "placeholder": ""
+        }
+      },
+      "countDesThree": {
+        "type": "Text",
+        "config": {
+          "label": "Count Des Three",
+          "placeholder": ""
+        }
+      },
+      "headingOne": {
+        "type": "Text",
+        "config": {
+          "label": "Heading One",
+          "placeholder": ""
+        }
+      },
+      "descriptionOne": {
+        "type": "Text",
+        "config": {
+          "label": "Description One",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "home_banner": {
+              "type": "SharedSlice"
+            },
+            "profile": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}
