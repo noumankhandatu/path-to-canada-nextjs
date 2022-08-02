@@ -114,6 +114,10 @@ const Home: NextPage = ({ home }: any) => {
   const IconTwo = mapper[0].IconTwo.url;
   const descriptionTwo = mapper[0].descriptionTwo;
   const nameTwo = mapper[0].nameTwo;
+
+
+  // profile banner
+  
   return (
     <div>
       <Head>

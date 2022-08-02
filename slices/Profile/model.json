@@ -1,0 +1,146 @@
+{
+  "id": "profile",
+  "type": "SharedSlice",
+  "name": "Profile",
+  "description": "Profile",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Profile",
+      "primary": {},
+      "items": {
+        "textOne": {
+          "type": "Text",
+          "config": {
+            "label": "Text One",
+            "placeholder": ""
+          }
+        },
+        "textTwo": {
+          "type": "Text",
+          "config": {
+            "label": "Text Two",
+            "placeholder": ""
+          }
+        },
+        "textThree": {
+          "type": "Text",
+          "config": {
+            "label": "Text Three",
+            "placeholder": ""
+          }
+        },
+        "textFour": {
+          "type": "Text",
+          "config": {
+            "label": "Text Four",
+            "placeholder": ""
+          }
+        },
+        "textFive": {
+          "type": "Text",
+          "config": {
+            "label": "Text Five",
+            "placeholder": ""
+          }
+        },
+        "textSix": {
+          "type": "Text",
+          "config": {
+            "label": "Text Six",
+            "placeholder": ""
+          }
+        },
+        "textSeven": {
+          "type": "Text",
+          "config": {
+            "label": "Text Seven",
+            "placeholder": ""
+          }
+        },
+        "textEight": {
+          "type": "Text",
+          "config": {
+            "label": "Text Eight",
+            "placeholder": ""
+          }
+        },
+        "profileTextOne": {
+          "type": "Text",
+          "config": {
+            "label": "Profile Text One",
+            "placeholder": ""
+          }
+        },
+        "profileTextTwo": {
+          "type": "Text",
+          "config": {
+            "label": "Profile Text Two",
+            "placeholder": ""
+          }
+        },
+        "profileTextThree": {
+          "type": "Text",
+          "config": {
+            "label": "Profile Text Three",
+            "placeholder": ""
+          }
+        },
+        "profileTextFour": {
+          "type": "Text",
+          "config": {
+            "label": "Profile Text Four",
+            "placeholder": ""
+          }
+        },
+        "profileTextFive": {
+          "type": "Text",
+          "config": {
+            "label": "Profile Text Five",
+            "placeholder": ""
+          }
+        },
+        "profileTextSix": {
+          "type": "Text",
+          "config": {
+            "label": "Profile Text Six",
+            "placeholder": ""
+          }
+        },
+        "profileTextSeven": {
+          "type": "Text",
+          "config": {
+            "label": "Profile Text Seven",
+            "placeholder": ""
+          }
+        },
+        "profileTextEight": {
+          "type": "Text",
+          "config": {
+            "label": "Profile Text Eight",
+            "placeholder": ""
+          }
+        },
+        "profileTextNine": {
+          "type": "Text",
+          "config": {
+            "label": "Profile Text Nine",
+            "placeholder": ""
+          }
+        },
+        "backgroundImage": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

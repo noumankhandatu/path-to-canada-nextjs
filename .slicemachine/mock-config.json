@@ -1,6 +1,7 @@
 {
   "_cts": {
-    "home": {}
+    "home": {},
+    "employee": {}
   },
   "slices": {
     "HomeBanner": {
@@ -18,6 +19,12 @@
     "AvatarSlice": {
       "default": {
         "primary": {}
+      }
+    },
+    "Profile": {
+      "default": {
+        "primary": {},
+        "items": {}
       }
     }
   }

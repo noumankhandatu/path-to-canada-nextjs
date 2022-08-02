@@ -2,16 +2,19 @@
 
 import AvatarSlice from './AvatarSlice';
 import HomeBanner from './HomeBanner';
+import Profile from './Profile';
 import TechRoleBanner from './TechRoleBanner';
 
 export {
 	AvatarSlice,
 	HomeBanner,
+	Profile,
 	TechRoleBanner,
 };
 
 export const components = {
 	avatar_slice: AvatarSlice,
 	home_banner: HomeBanner,
+	profile: Profile,
 	tech_role_banner: TechRoleBanner,
 };
