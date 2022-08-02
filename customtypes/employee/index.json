@@ -1,0 +1,138 @@
+{
+  "id": "employee",
+  "label": "employee",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "imageOne": {
+        "type": "Image",
+        "config": {
+          "label": "Image One",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": ""
+        }
+      },
+      "linkOne": {
+        "type": "Text",
+        "config": {
+          "label": "Link One",
+          "placeholder": ""
+        }
+      },
+      "paragraphOne": {
+        "type": "Text",
+        "config": {
+          "label": "Paragraph One",
+          "placeholder": ""
+        }
+      },
+      "headingOne": {
+        "type": "Text",
+        "config": {
+          "label": "Heading One",
+          "placeholder": ""
+        }
+      },
+      "headingTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Heading Two",
+          "placeholder": ""
+        }
+      },
+      "linkTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Link Two",
+          "placeholder": ""
+        }
+      },
+      "paragraphTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Paragraph Two",
+          "placeholder": ""
+        }
+      },
+      "linkThree": {
+        "type": "Text",
+        "config": {
+          "label": "Link Three",
+          "placeholder": ""
+        }
+      },
+      "headingThree": {
+        "type": "Text",
+        "config": {
+          "label": "Heading Three",
+          "placeholder": ""
+        }
+      },
+      "paragraphThree": {
+        "type": "Text",
+        "config": {
+          "label": "Paragraph Three",
+          "placeholder": ""
+        }
+      },
+      "bannerTextOne": {
+        "type": "Text",
+        "config": {
+          "label": "Banner Text One",
+          "placeholder": ""
+        }
+      },
+      "bannerTextTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Banner Text Two",
+          "placeholder": ""
+        }
+      },
+      "bannerTextThree": {
+        "type": "Text",
+        "config": {
+          "label": "Banner Text Three",
+          "placeholder": ""
+        }
+      },
+      "bannerBackgroundImage": {
+        "type": "Image",
+        "config": {
+          "label": "Banner Background Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "home_banner": {
+              "type": "SharedSlice"
+            },
+            "profile": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}
