@@ -1,6 +1,250 @@
 {
   "slices": {
     "components": {
+      "avatar_slice": {
+        "library": "slices",
+        "id": "avatar_slice",
+        "name": "AvatarSlice",
+        "description": "AvatarSlice",
+        "model": {
+          "id": "avatar_slice",
+          "type": "SharedSlice",
+          "name": "AvatarSlice",
+          "description": "AvatarSlice",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "AvatarSlice",
+              "primary": {
+                "imageOne": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image One",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "nameOne": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Name One",
+                    "placeholder": ""
+                  }
+                },
+                "titleOne": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title One",
+                    "placeholder": ""
+                  }
+                },
+                "imageTwo": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image Two",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "nameTwo": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Name Two",
+                    "placeholder": ""
+                  }
+                },
+                "titleTwo": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title Two",
+                    "placeholder": ""
+                  }
+                },
+                "ImageThree": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image Three",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "nameThree": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Name Three",
+                    "placeholder": ""
+                  }
+                },
+                "titleThree": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title Three",
+                    "placeholder": ""
+                  }
+                },
+                "imageFour": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image Four",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "nameFour": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Name Four",
+                    "placeholder": ""
+                  }
+                },
+                "titleFour": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title Four",
+                    "placeholder": ""
+                  }
+                },
+                "imageFive": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image Five",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "nameFive": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Name Five",
+                    "placeholder": ""
+                  }
+                },
+                "titleFive": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title Five",
+                    "placeholder": ""
+                  }
+                },
+                "imageSix": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image Six",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "nameSix": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Name Six",
+                    "placeholder": ""
+                  }
+                },
+                "titleSix": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title Six",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "avatar_slice",
+            "items": [],
+            "primary": {
+              "imageOne": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+              },
+              "nameOne": "exploit dot-com blockchains",
+              "titleOne": "enhance strategic models",
+              "imageTwo": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+              },
+              "nameTwo": "synergize 24/365 models",
+              "titleTwo": "syndicate world-class infrastructures",
+              "ImageThree": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
+              },
+              "nameThree": "utilize web-enabled e-business",
+              "titleThree": "cultivate B2C platforms",
+              "imageFour": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+              },
+              "nameFour": "transition e-business e-tailers",
+              "titleFour": "disintermediate bleeding-edge e-business",
+              "imageFive": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+              },
+              "nameFive": "repurpose best-of-breed schemas",
+              "titleFive": "disintermediate sticky relationships",
+              "imageSix": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
+              },
+              "nameSix": "incubate plug-and-play bandwidth",
+              "titleSix": "implement plug-and-play e-tailers"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/home/xin/React-Mode/path-to-canada-nextjs/.slicemachine/assets/slices/AvatarSlice/default/preview.png",
+            "width": 800,
+            "height": 48
+          }
+        }
+      },
       "home_banner": {
         "library": "slices",
         "id": "home_banner",
@@ -103,6 +347,92 @@
         "screenshotPaths": {
           "default": {
             "path": "/home/xin/React-Mode/path-to-canada-nextjs/.slicemachine/assets/slices/HomeBanner/default/preview.png",
+            "width": 800,
+            "height": 48
+          }
+        }
+      },
+      "tech_role_banner": {
+        "library": "slices",
+        "id": "tech_role_banner",
+        "name": "TechRoleBanner",
+        "description": "TechRoleBanner",
+        "model": {
+          "id": "tech_role_banner",
+          "type": "SharedSlice",
+          "name": "TechRoleBanner",
+          "description": "TechRoleBanner",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TechRoleBanner",
+              "primary": {},
+              "items": {
+                "headingOne": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Heading One",
+                    "placeholder": ""
+                  }
+                },
+                "lableOne": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Lable One",
+                    "placeholder": ""
+                  }
+                },
+                "headingTwo": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Heading Two",
+                    "placeholder": ""
+                  }
+                },
+                "labelTwo": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Label Two",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "tech_role_banner",
+            "items": [
+              {
+                "headingOne": "target web-enabled e-tailers",
+                "lableOne": "deliver innovative initiatives",
+                "headingTwo": "seize leading-edge ROI",
+                "labelTwo": "brand vertical technologies"
+              },
+              {
+                "headingOne": "benchmark B2B solutions",
+                "lableOne": "unleash innovative systems",
+                "headingTwo": "strategize front-end relationships",
+                "labelTwo": "synergize bricks-and-clicks channels"
+              }
+            ],
+            "primary": {}
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/home/xin/React-Mode/path-to-canada-nextjs/.slicemachine/assets/slices/TechRoleBanner/default/preview.png",
             "width": 800,
             "height": 48
           }

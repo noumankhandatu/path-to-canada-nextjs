@@ -15,15 +15,32 @@ const Home: NextPage = ({ home }: any) => {
   const mapper = home?.results?.map((items) => {
     return items?.data;
   });
+  // home banner slice
   const bTitle = mapper?.map((items) => {
-    return items.slices[0].items[0].title;
+    return items.slices[2].items[0].title;
   });
   const bDescription = mapper?.map((items) => {
-    return items.slices[0].items[0].description;
+    return items.slices[2].items[0].description;
   });
   const backgroundImage = mapper?.map((items) => {
-    return items.slices[0].items[0].backgroundImage.url;
+    return items.slices[2].items[0].backgroundImage.url;
   });
+  // home banner slice end
+
+  // TechInfo banner
+  const headingOne = mapper?.map((items) => {
+    return items.slices[1].items[0].headingOne;
+  });
+  const lableOne = mapper?.map((items) => {
+    return items.slices[1].items[0].lableOne;
+  });
+  const headingTwo = mapper?.map((items) => {
+    return items.slices[1].items[0].headingTwo;
+  });
+  const labelTwo = mapper?.map((items) => {
+    return items.slices[1].items[0].labelTwo;
+  });
+  // TechInfo banner end
   const title = mapper[0].title;
   const description = mapper[0].description;
   const textOne = mapper[0].textOne;
@@ -190,10 +207,10 @@ const Home: NextPage = ({ home }: any) => {
         </Wrapper>
         {/* red layer connecting section */}
         <RedBannerSection
-          Fheading="Find my tech role in Canada"
-          Sheading={`Help me build my life and career.`}
-          Flabel="Find my tech role in Canada"
-          Slabel="   Help me build my life and career."
+          Fheading={headingOne ? headingOne : `pending`}
+          Sheading={lableOne ? lableOne : `pending`}
+          Flabel={headingTwo ? headingTwo : `pending`}
+          Slabel={labelTwo ? labelTwo : `pending`}
         />
         {/* testimonals */}
         <Wrapper className="pb-20 ">

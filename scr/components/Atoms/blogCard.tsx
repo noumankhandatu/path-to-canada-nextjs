@@ -5,7 +5,6 @@ import RedLableText from "./redLableText";
 import Blog from "../../../pages/blog";
 
 const BlogCard = ({ items }: object | any) => {
-  console.log(items);
 
   const { image, title, price, description } = items;
   return (
