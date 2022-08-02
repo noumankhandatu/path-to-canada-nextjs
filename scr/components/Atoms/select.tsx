@@ -15,6 +15,7 @@ const Select = ({ label, values }: SelectProps) => {
           <Font>{label}</Font>
         </option>
         {values.map((items: any) => {
+          console.log(items);
           return (
             <option>
               <Font> {items}</Font>
