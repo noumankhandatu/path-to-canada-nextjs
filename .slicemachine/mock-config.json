@@ -8,6 +8,17 @@
         "primary": {},
         "items": {}
       }
+    },
+    "TechRoleBanner": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "AvatarSlice": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

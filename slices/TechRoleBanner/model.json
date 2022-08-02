@@ -1,0 +1,47 @@
+{
+  "id": "tech_role_banner",
+  "type": "SharedSlice",
+  "name": "TechRoleBanner",
+  "description": "TechRoleBanner",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TechRoleBanner",
+      "primary": {},
+      "items": {
+        "headingOne": {
+          "type": "Text",
+          "config": {
+            "label": "Heading One",
+            "placeholder": ""
+          }
+        },
+        "lableOne": {
+          "type": "Text",
+          "config": {
+            "label": "Lable One",
+            "placeholder": ""
+          }
+        },
+        "headingTwo": {
+          "type": "Text",
+          "config": {
+            "label": "Heading Two",
+            "placeholder": ""
+          }
+        },
+        "labelTwo": {
+          "type": "Text",
+          "config": {
+            "label": "Label Two",
+            "placeholder": ""
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

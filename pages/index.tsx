@@ -15,15 +15,32 @@ const Home: NextPage = ({ home }: any) => {
   const mapper = home?.results?.map((items) => {
     return items?.data;
   });
+  // home banner slice
   const bTitle = mapper?.map((items) => {
-    return items.slices[0].items[0].title;
+    return items.slices[2].items[0].title;
   });
   const bDescription = mapper?.map((items) => {
-    return items.slices[0].items[0].description;
+    return items.slices[2].items[0].description;
   });
   const backgroundImage = mapper?.map((items) => {
-    return items.slices[0].items[0].backgroundImage.url;
+    return items.slices[2].items[0].backgroundImage.url;
   });
+  // home banner slice end
+
+  // TechInfo banner
+  const headingOne = mapper?.map((items) => {
+    return items.slices[1].items[0].headingOne;
+  });
+  const lableOne = mapper?.map((items) => {
+    return items.slices[1].items[0].lableOne;
+  });
+  const headingTwo = mapper?.map((items) => {
+    return items.slices[1].items[0].headingTwo;
+  });
+  const labelTwo = mapper?.map((items) => {
+    return items.slices[1].items[0].labelTwo;
+  });
+  // TechInfo banner end
   const title = mapper[0].title;
   const description = mapper[0].description;
   const textOne = mapper[0].textOne;
@@ -87,6 +104,16 @@ const Home: NextPage = ({ home }: any) => {
   const colorTextTwo = mapper[0].colorTextTwo;
   const roadMapTitle = mapper[0].roadMapTitle;
   const roadMapDescription = mapper[0].roadMapDescription;
+
+  const testimonialImageOne = mapper[0].testimonialImageOne.url;
+  const IconOne = mapper[0].IconOne.url;
+  const nameOne = mapper[0].nameOne;
+  const descriptionOne = mapper[0].descriptionOne;
+
+  const testimonialImageTwo = mapper[0].testimonialImageTwo.url;
+  const IconTwo = mapper[0].IconTwo.url;
+  const descriptionTwo = mapper[0].descriptionTwo;
+  const nameTwo = mapper[0].nameTwo;
   return (
     <div>
       <Head>
@@ -190,10 +217,10 @@ const Home: NextPage = ({ home }: any) => {
         </Wrapper>
         {/* red layer connecting section */}
         <RedBannerSection
-          Fheading="Find my tech role in Canada"
-          Sheading={`Help me build my life and career.`}
-          Flabel="Find my tech role in Canada"
-          Slabel="   Help me build my life and career."
+          Fheading={headingOne ? headingOne : `pending`}
+          Sheading={lableOne ? lableOne : `pending`}
+          Flabel={headingTwo ? headingTwo : `pending`}
+          Slabel={labelTwo ? labelTwo : `pending`}
         />
         {/* testimonals */}
         <Wrapper className="pb-20 ">
@@ -202,27 +229,25 @@ const Home: NextPage = ({ home }: any) => {
               What our candidates say
             </div>
           </div>
-          <div className="grid grid-cols-1 text-center md:grid-cols-[1fr_1fr] gap-4  ">
+          <div className="grid grid-cols-1 text-center justify-center justify-items-center md:grid-cols-[1fr_1fr] gap-4  ">
             <div>
               <TestimonialCard
-                text="“Having to leave the US by December due to a denied H-1B was obviously a stressful situation. I was able to secure a Canadian work permit using Global Talent Stream quickly. I can now continue my tech career in Canada.”"
-                iconImg={
-                  "https://path2canada.ca/wp-content/uploads/2022/05/quotes-img.png"
-                }
+                text={descriptionOne ? descriptionOne : `pending`}
+                iconImg={IconOne ? IconOne : `pending`}
                 avatarImg={
-                  "https://path2canada.ca/wp-content/uploads/2022/05/Deepak-Bandi-150x150-1.jpeg"
+                  testimonialImageOne ? testimonialImageOne : `pending`
                 }
+                name={nameOne ? nameOne : `pending`}
               />
             </div>
             <div>
               <TestimonialCard
-                text="I am writing this testimonial to show my appreciation and gratitude towards the Path 2 Canada team who helped me immensely in getting Canadian work permit visa using Global talent stream. Got a prompt response for all the questions I had in the immigration process. They have a highly skilled expert team to provide end to end immigration services. "
-                iconImg={
-                  "https://path2canada.ca/wp-content/uploads/2022/05/quotes-img.png"
-                }
+                text={descriptionTwo ? descriptionTwo : `pending`}
+                iconImg={IconTwo ? IconTwo : `pending`}
                 avatarImg={
-                  "https://path2canada.ca/wp-content/uploads/2022/05/Gaurav-Saraswat-150x150-1.jpeg"
+                  testimonialImageTwo ? testimonialImageTwo : `pending`
                 }
+                name={nameTwo ? nameTwo : `pending`}
               />
             </div>
           </div>

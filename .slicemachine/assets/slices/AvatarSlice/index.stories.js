@@ -1,0 +1,9 @@
+import MyComponent from '../../../../slices/AvatarSlice';
+
+export default {
+  title: 'slices/AvatarSlice'
+}
+
+
+export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"avatar_slice","items":[],"primary":{"imageOne":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"},"nameOne":"exploit dot-com blockchains","titleOne":"enhance strategic models","imageTwo":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"},"nameTwo":"synergize 24/365 models","titleTwo":"syndicate world-class infrastructures","ImageThree":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"},"nameThree":"utilize web-enabled e-business","titleThree":"cultivate B2C platforms","imageFour":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"},"nameFour":"transition e-business e-tailers","titleFour":"disintermediate bleeding-edge e-business","imageFive":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"},"nameFive":"repurpose best-of-breed schemas","titleFive":"disintermediate sticky relationships","imageSix":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"},"nameSix":"incubate plug-and-play bandwidth","titleSix":"implement plug-and-play e-tailers"},"id":"_Default"}} />
+_Default.storyName = 'Default'

@@ -272,12 +272,157 @@
           "placeholder": ""
         }
       },
+      "weConnect": {
+        "type": "Text",
+        "config": {
+          "label": "We Connect",
+          "placeholder": ""
+        }
+      },
+      "letsWork": {
+        "type": "Text",
+        "config": {
+          "label": "Lets Work",
+          "placeholder": ""
+        }
+      },
+      "pickingUp": {
+        "type": "Text",
+        "config": {
+          "label": "Picking Up",
+          "placeholder": ""
+        }
+      },
+      "myStory": {
+        "type": "Text",
+        "config": {
+          "label": "My Story",
+          "placeholder": ""
+        }
+      },
+      "storyDes": {
+        "type": "Text",
+        "config": {
+          "label": "Story Des",
+          "placeholder": ""
+        }
+      },
+      "pathToCanada": {
+        "type": "Text",
+        "config": {
+          "label": "Path To Canada",
+          "placeholder": ""
+        }
+      },
+      "pathToCanadaDes": {
+        "type": "Text",
+        "config": {
+          "label": "Path To Canada Des",
+          "placeholder": ""
+        }
+      },
+      "WriterImage": {
+        "type": "Image",
+        "config": {
+          "label": "Writer Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "writedName": {
+        "type": "Text",
+        "config": {
+          "label": "Writed Name",
+          "placeholder": ""
+        }
+      },
+      "writerDes": {
+        "type": "Text",
+        "config": {
+          "label": "Writer Des",
+          "placeholder": ""
+        }
+      },
+      "testimonialImageOne": {
+        "type": "Image",
+        "config": {
+          "label": "Testimonial Image One",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "IconOne": {
+        "type": "Image",
+        "config": {
+          "label": "Icon One",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "nameOne": {
+        "type": "Text",
+        "config": {
+          "label": "Name One",
+          "placeholder": ""
+        }
+      },
+      "descriptionOne": {
+        "type": "Text",
+        "config": {
+          "label": "Description One",
+          "placeholder": ""
+        }
+      },
+      "testimonialImageTwo": {
+        "type": "Image",
+        "config": {
+          "label": "Testimonial Image Two",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "IconTwo": {
+        "type": "Image",
+        "config": {
+          "label": "Icon Two",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "descriptionTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Description Two",
+          "placeholder": ""
+        }
+      },
+      "nameTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Name Two",
+          "placeholder": ""
+        }
+      },
+      "ImageLeaf": {
+        "type": "Image",
+        "config": {
+          "label": "Image Leaf",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
             "home_banner": {
+              "type": "SharedSlice"
+            },
+            "tech_role_banner": {
+              "type": "SharedSlice"
+            },
+            "avatar_slice": {
               "type": "SharedSlice"
             }
           }
