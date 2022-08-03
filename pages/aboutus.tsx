@@ -4,34 +4,61 @@ import BlackBannerLeafSection from "../scr/components/Organism/blackBannerLeafSe
 import Wrapper from "../scr/components/Organism/Wrapper";
 import Font from "../scr/components/Atoms/Font";
 import RedBannerSection from "../scr/components/Organism/redBannerSection";
-const AboutUs = () => {
+import Prismic from "prismic-javascript";
+import { Client } from "../prismic-configuration";
+const AboutUs = ({ aboutus }: any) => {
+  const mapper = aboutus?.results.map((items) => {
+    return items.data;
+  });
+  // home banner
+  const homeBackgroundImage = mapper.map((items) => {
+    return items.slices[1].items[0].backgroundImage.url;
+  });
+  const homeTitle = mapper.map((items) => {
+    return items.slices[1].items[0].title;
+  });
+  const homeDescription = mapper.map((items) => {
+    return items.slices[1].items[0].description;
+  });
+  // home banner ended
+  // red banner
+  const headingOne = mapper.map((items) => {
+    return items.slices[0].items[0].headingOne;
+  });
+  const headingTwo = mapper.map((items) => {
+    return items.slices[0].items[0].headingOne;
+  });
+  const lableOne = mapper.map((items) => {
+    return items.slices[0].items[0].lableOne;
+  });
+  const labelTwo = mapper.map((items) => {
+    return items.slices[0].items[0].labelTwo;
+  });
+
+  // red banner end
+  const heading = aboutus?.results.map((items) => {
+    return items.data.heading;
+  });
+  const description = aboutus?.results.map((items) => {
+    return items.data.description;
+  });
   return (
     <div className="pt-40">
       <HomePageFirstSection
-        heading="We create connections"
-        paragraph="Canadian employers can build their teams with experienced, quality talent in 90 days or less. Experienced talent can build their lives and tech career in Canada"
-        bgImage={
-          "https://path2canada.ca/wp-content/uploads/2022/05/aboutUs_hero.svg"
-        }
+        heading={homeTitle ? homeTitle : `pending`}
+        paragraph={homeDescription ? homeDescription : `pending`}
+        bgImage={homeBackgroundImage ? homeBackgroundImage : `pending`}
         showFirstBtn
       />
       <Wrapper className="bg-aqua-color text-white text-center pt-20 pb-20">
-        <div className="text-4xl font-bold pb-10">Our Mission</div>
-        <Font>
-          Path to Canada respects immigrants and their desire to improve their
-          own lives and the lives of their families. We seek to offer a solution
-          that allows people to live and work in a country like Canada that
-          welcomes immigrants. We speak from personal experience when it comes
-          to living and working in Canada. Path to Canada will never sell your
-          information or market to you in any way. Our goal is to set you on a
-          path of building your life and tech career in Canada.
-        </Font>
+        <div className="text-4xl font-bold pb-10">{heading}</div>
+        <Font>{description ? description : `pending`}</Font>
       </Wrapper>
       <RedBannerSection
-        Fheading="Find me a role in Canada"
-        Sheading="Find me talent"
-        Flabel="HELP ME BUILD MY LIFE AND CAREER"
-        Slabel="HELP ME FILL OUR OPEN ROLES"
+        Fheading={headingOne ? headingOne : `pending`}
+        Sheading={headingTwo ? headingTwo : `pending`}
+        Flabel={lableOne ? lableOne : `pending`}
+        Slabel={labelTwo ? labelTwo : `pending`}
       />
       <BlackBannerLeafSection />
     </div>
@@ -39,3 +66,13 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+export async function getServerSideProps() {
+  const aboutus = await Client().query(
+    Prismic.Predicates.at("document.type", "aboutus")
+  );
+  return {
+    props: {
+      aboutus,
+    },
+  };
+}

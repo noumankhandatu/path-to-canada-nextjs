@@ -1,0 +1,87 @@
+{
+  "id": "footer",
+  "label": "footer",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "lets": {
+        "type": "Text",
+        "config": {
+          "label": "Lets",
+          "placeholder": ""
+        }
+      },
+      "Connected": {
+        "type": "Text",
+        "config": {
+          "label": "Connected",
+          "placeholder": ""
+        }
+      },
+      "Sign": {
+        "type": "Text",
+        "config": {
+          "label": "Sign",
+          "placeholder": ""
+        }
+      },
+      "North": {
+        "type": "Text",
+        "config": {
+          "label": "North",
+          "placeholder": ""
+        }
+      },
+      "industry": {
+        "type": "Text",
+        "config": {
+          "label": "Industry",
+          "placeholder": ""
+        }
+      },
+      "First": {
+        "type": "Text",
+        "config": {
+          "label": "First",
+          "placeholder": ""
+        }
+      },
+      "Last": {
+        "type": "Text",
+        "config": {
+          "label": "Last",
+          "placeholder": ""
+        }
+      },
+      "Email": {
+        "type": "Text",
+        "config": {
+          "label": "Email",
+          "placeholder": ""
+        }
+      },
+      "CHOOSE": {
+        "type": "Text",
+        "config": {
+          "label": "CHOOSE",
+          "placeholder": ""
+        }
+      },
+      "SUBSCRIBE": {
+        "type": "Text",
+        "config": {
+          "label": "SUBSCRIBE",
+          "placeholder": ""
+        }
+      },
+      "CANADA": {
+        "type": "Text",
+        "config": {
+          "label": "CANADA",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

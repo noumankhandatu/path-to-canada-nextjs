@@ -1,0 +1,67 @@
+{
+  "id": "header",
+  "label": "header",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "linkOne": {
+        "type": "Text",
+        "config": {
+          "label": "Link One",
+          "placeholder": ""
+        }
+      },
+      "linkTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Link Two",
+          "placeholder": ""
+        }
+      },
+      "linkThree": {
+        "type": "Text",
+        "config": {
+          "label": "Link Three",
+          "placeholder": ""
+        }
+      },
+      "linkFour": {
+        "type": "Text",
+        "config": {
+          "label": "Link Four",
+          "placeholder": ""
+        }
+      },
+      "linkFive": {
+        "type": "Text",
+        "config": {
+          "label": "Link Five",
+          "placeholder": ""
+        }
+      },
+      "linkSix": {
+        "type": "Text",
+        "config": {
+          "label": "Link Six",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    }
+  }
+}

@@ -1,24 +1,3 @@
-const [toggleFn, setToggleFn] = useState<Boolean>(true);
-  const [fetchData, setFetchData] = useState<any>("");
-  async function getServerSideProps() {
-    const home = await Client().query(
-      Prismic.Predicates.at("document.type", "home")
-    );
-    setFetchData(home);
-    return {
-      props: {
-        home,
-      },
-    };
-  }
-  if (toggleFn) {
-    getServerSideProps();
-    setToggleFn(!toggleFn);
-  }
-  const mapper = fetchData?.results?.map((items) => {
-    return items?.data;
-  });
-
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).

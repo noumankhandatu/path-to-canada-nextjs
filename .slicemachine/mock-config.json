@@ -4,7 +4,11 @@
     "employee": {},
     "employers": {},
     "jobs": {},
-    "faqs": {}
+    "faqs": {},
+    "aboutus": {},
+    "blog": {},
+    "footer": {},
+    "header": {}
   },
   "slices": {
     "HomeBanner": {

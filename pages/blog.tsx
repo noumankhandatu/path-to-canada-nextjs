@@ -7,7 +7,24 @@ import { useSelector, useDispatch } from "react-redux";
 import Spinner from "../scr/components/Atoms/spinner";
 import Font from "../scr/components/Atoms/Font";
 import { fetchUserById } from "../Redux/blogSlicer/index";
-const Blog = () => {
+import Prismic from "prismic-javascript";
+import { Client } from "../prismic-configuration";
+const Blog = ({ blog }: any) => {
+  const mapper = blog?.results?.map((items) => {
+    return items.data?.slices;
+  });
+  // home banner
+  const headingOne = mapper?.map((data) => {
+    return data[0]?.items[0]?.title;
+  });
+  const description = mapper?.map((data) => {
+    return data[0]?.items[0]?.description;
+  });
+  const backgroundImage = mapper?.map((data) => {
+    return data[0]?.items[0]?.backgroundImage.url;
+  });
+  // home banner end
+
   const dispatch = useDispatch();
   const state: any = useSelector((state: any) => state.BlogSlicer.data);
   useEffect(() => {
@@ -16,9 +33,9 @@ const Blog = () => {
   return (
     <div className="pt-40">
       <HomePageFirstSection
-        heading="Stay informed about working in Canadian tech"
-        bgImage="https://path2canada.ca/wp-content/uploads/2022/05/blog_hero.svg"
-        paragraph="Our industry and immigration blog is designed to help you decide if Canada is the right path for you, and prepare you to make the move."
+        heading={headingOne ? headingOne : `pending`}
+        bgImage={backgroundImage ? backgroundImage : `pending`}
+        paragraph={description ? description : `pending`}
       />
       <Wrapper>
         <div className="pt-10 pb-20">
@@ -44,3 +61,13 @@ const Blog = () => {
 };
 
 export default Blog;
+export async function getServerSideProps() {
+  const blog = await Client().query(
+    Prismic.Predicates.at("document.type", "blog")
+  );
+  return {
+    props: {
+      blog,
+    },
+  };
+}
