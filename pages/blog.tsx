@@ -9,7 +9,21 @@ import Font from "../scr/components/Atoms/Font";
 import { fetchUserById } from "../Redux/blogSlicer/index";
 import Prismic from "prismic-javascript";
 import { Client } from "../prismic-configuration";
-const Blog = ({ blog }: any) => {
+const Blog = ({
+  blog,
+}:
+  | {
+      license: string;
+      next_page: null;
+      prev_page?: null;
+      results: [];
+      results_per_page: number;
+      results_size?: number;
+      total_pages: number;
+      total_results_size: number;
+      version?: string;
+    }[]
+  | any) => {
   const mapper = blog?.results?.map((items) => {
     return items.data?.slices;
   });

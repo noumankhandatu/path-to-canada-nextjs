@@ -1,7 +1,7 @@
 import React from "react";
 type CountCircleProps = {
   count: number | string | any;
-  className?: any;
+  className?: string | any;
 };
 
 const CountCircle = ({ count, className }: CountCircleProps) => {

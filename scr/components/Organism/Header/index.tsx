@@ -9,7 +9,20 @@ import { Client } from "../../../../prismic-configuration";
 
 const Header = () => {
   const [toggleFn, setToggleFn] = useState<Boolean>(true);
-  const [fetchData, setFetchData] = useState<any>("");
+  const [fetchData, setFetchData] = useState<
+    | {
+        license: string;
+        next_page: null;
+        prev_page?: null;
+        results: [];
+        results_per_page: number;
+        results_size?: number;
+        total_pages: number;
+        total_results_size: number;
+        version?: string;
+      }[]
+    | any
+  >("");
   async function getServerSideProps() {
     const header = await Client().query(
       Prismic.Predicates.at("document.type", "header")

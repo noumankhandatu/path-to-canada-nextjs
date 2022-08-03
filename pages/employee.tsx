@@ -8,7 +8,21 @@ import Button from "../scr/components/Atoms/button";
 import Font from "../scr/components/Atoms/Font";
 import Prismic from "prismic-javascript";
 import { Client } from "../prismic-configuration";
-const Employee = ({ employee }: any) => {
+const Employee = ({
+  employee,
+}:
+  | {
+      license: string;
+      next_page: null;
+      prev_page?: null;
+      results: [];
+      results_per_page: number;
+      results_size?: number;
+      total_pages: number;
+      total_results_size: number;
+      version?: string;
+    }[]
+  | any) => {
   const mapper = employee?.results?.map((items) => {
     return items?.data;
   });
