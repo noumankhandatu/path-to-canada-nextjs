@@ -156,9 +156,9 @@ const Employers = ({ employers }: any) => {
   const profileTextEight = mapper.map((data) => {
     return data.slices[0].items[0].profileTextEight;
   });
-  const profileTextNine = mapper.map((data) => {
-    return data.slices[0].items[0].profileTextNine;
-  });
+  // const profileTextNine = mapper.map((data) => {
+  //   return data.slices[0].items[0].profileTextNine;
+  // });
 
   // Profile banner ended
   return (

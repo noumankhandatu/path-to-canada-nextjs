@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { baseUrl } from "../../services";
 export const fetchUserById: any = createAsyncThunk(
   "akaBlogSlicerThunk",
