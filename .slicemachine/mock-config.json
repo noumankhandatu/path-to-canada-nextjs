@@ -3,7 +3,8 @@
     "home": {},
     "employee": {},
     "employers": {},
-    "jobs": {}
+    "jobs": {},
+    "faqs": {}
   },
   "slices": {
     "HomeBanner": {
@@ -27,6 +28,11 @@
       "default": {
         "primary": {},
         "items": {}
+      }
+    },
+    "Accordions": {
+      "default": {
+        "primary": {}
       }
     }
   }

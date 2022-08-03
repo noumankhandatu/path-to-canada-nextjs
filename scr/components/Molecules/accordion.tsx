@@ -1,5 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
-import Font from "../Atoms/Font";
+import React, { useRef, useEffect } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
 
 type AccordionProps = {

@@ -1,6 +1,90 @@
 {
   "slices": {
     "components": {
+      "accordions": {
+        "library": "slices",
+        "id": "accordions",
+        "name": "Accordions",
+        "description": "Accordions",
+        "model": {
+          "id": "accordions",
+          "type": "SharedSlice",
+          "name": "Accordions",
+          "description": "Accordions",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Accordions",
+              "primary": {},
+              "items": {
+                "question": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Question",
+                    "placeholder": ""
+                  }
+                },
+                "answer": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Answer",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "accordions",
+            "items": [
+              {
+                "question": "deploy collaborative blockchains",
+                "answer": "grow sticky web-readiness"
+              },
+              {
+                "question": "iterate back-end metrics",
+                "answer": "incubate viral models"
+              },
+              {
+                "question": "reinvent synergistic markets",
+                "answer": "embrace proactive networks"
+              },
+              {
+                "question": "transition enterprise e-markets",
+                "answer": "reintermediate mission-critical metrics"
+              },
+              {
+                "question": "scale ubiquitous relationships",
+                "answer": "unleash efficient schemas"
+              },
+              {
+                "question": "deploy plug-and-play networks",
+                "answer": "reintermediate e-business interfaces"
+              }
+            ],
+            "primary": {}
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/home/xin/React-Mode/path-to-canada-nextjs/.slicemachine/assets/slices/Accordions/default/preview.png",
+            "width": 800,
+            "height": 48
+          }
+        }
+      },
       "avatar_slice": {
         "library": "slices",
         "id": "avatar_slice",

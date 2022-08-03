@@ -1,11 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Font from "./Font";
 import RedLableText from "./redLableText";
-// import { fetchUserById } from "../../Redux/blogSlicer/index";
-import Blog from "../../../pages/blog";
 
 const BlogCard = ({ items }: object | any) => {
-
   const { image, title, price, description } = items;
   return (
     <div className="  flex flex-col cursor-pointer">
