@@ -38,6 +38,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "BlogCards": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }
