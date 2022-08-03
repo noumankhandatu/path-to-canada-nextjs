@@ -4,7 +4,8 @@
     "employee": {},
     "employers": {},
     "jobs": {},
-    "faqs": {}
+    "faqs": {},
+    "aboutus": {}
   },
   "slices": {
     "HomeBanner": {
