@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import BlackBannerLeafSection from "../scr/components/Organism/blackBannerLeafSection";
 import HomePageFirstSection from "../scr/components/Organism/homePageFirstSection";
 import Wrapper from "../scr/components/Organism/Wrapper";
