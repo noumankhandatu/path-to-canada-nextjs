@@ -11,7 +11,23 @@ import Font from "../scr/components/Atoms/Font";
 import RedBannerSection from "../scr/components/Organism/redBannerSection";
 import Prismic from "prismic-javascript";
 import { Client } from "../prismic-configuration";
-const Home: NextPage = ({ home }: any) => {
+const Home: NextPage = ({
+  home,
+}:
+  | {
+      license: string;
+      next_page: null;
+      prev_page?: null;
+      results: [];
+      results_per_page: number;
+      results_size?: number;
+      total_pages: number;
+      total_results_size: number;
+      version?: string;
+    }[]
+  | any) => {
+  console.log(home, "home");
+
   const mapper = home?.results?.map((items) => {
     return items?.data;
   });
@@ -115,9 +131,8 @@ const Home: NextPage = ({ home }: any) => {
   const descriptionTwo = mapper[0].descriptionTwo;
   const nameTwo = mapper[0].nameTwo;
 
-
   // profile banner
-  
+
   return (
     <div>
       <Head>

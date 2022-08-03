@@ -7,7 +7,21 @@ import Banner from "../scr/components/Atoms/redBanner";
 import Accordion from "../scr/components/Molecules/accordion";
 import Prismic from "prismic-javascript";
 import { Client } from "../prismic-configuration";
-const FAQS = ({ faqs }: any) => {
+const FAQS = ({
+  faqs,
+}:
+  | {
+      license: string;
+      next_page: null;
+      prev_page?: null;
+      results: [];
+      results_per_page: number;
+      results_size?: number;
+      total_pages: number;
+      total_results_size: number;
+      version?: string;
+    }[]
+  | any) => {
   // accordion started
   const mapping = faqs?.results?.map((items) => {
     return items.data?.slices;
