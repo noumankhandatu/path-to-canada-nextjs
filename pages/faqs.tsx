@@ -15,8 +15,6 @@ const FAQS = ({ faqs }: any) => {
   const helper = mapping[0][0].items.map((zeus) => {
     return zeus;
   });
-  console.log(helper, "helper");
-
   const AccordionArray = [
     {
       label: helper[0].question,
