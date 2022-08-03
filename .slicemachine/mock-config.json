@@ -6,7 +6,8 @@
     "jobs": {},
     "faqs": {},
     "aboutus": {},
-    "blog": {}
+    "blog": {},
+    "footer": {}
   },
   "slices": {
     "HomeBanner": {

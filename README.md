@@ -1,13 +1,13 @@
-const [toggleFn, setToggleFn] = useState<Boolean>(true);
+ const [toggleFn, setToggleFn] = useState<Boolean>(true);
   const [fetchData, setFetchData] = useState<any>("");
   async function getServerSideProps() {
-    const home = await Client().query(
-      Prismic.Predicates.at("document.type", "home")
+    const footer = await Client().query(
+      Prismic.Predicates.at("document.type", "footer")
     );
-    setFetchData(home);
+    setFetchData(footer);
     return {
       props: {
-        home,
+        footer,
       },
     };
   }
@@ -18,6 +18,7 @@ const [toggleFn, setToggleFn] = useState<Boolean>(true);
   const mapper = fetchData?.results?.map((items) => {
     return items?.data;
   });
+  console.log(mapper, "helo");
 
 # Next.js + Tailwind CSS Example
 
