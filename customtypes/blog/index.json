@@ -12,6 +12,9 @@
           "choices": {
             "home_banner": {
               "type": "SharedSlice"
+            },
+            "blog_cards": {
+              "type": "SharedSlice"
             }
           }
         }

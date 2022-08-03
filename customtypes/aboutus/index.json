@@ -19,6 +19,93 @@
           "placeholder": ""
         }
       },
+      "imageOne": {
+        "type": "Image",
+        "config": {
+          "label": "Image One",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "titleOne": {
+        "type": "Text",
+        "config": {
+          "label": "Title One",
+          "placeholder": ""
+        }
+      },
+      "descriptionOne": {
+        "type": "Text",
+        "config": {
+          "label": "Description One",
+          "placeholder": ""
+        }
+      },
+      "dateOne": {
+        "type": "Text",
+        "config": {
+          "label": "Date One",
+          "placeholder": ""
+        }
+      },
+      "imageTwo": {
+        "type": "Image",
+        "config": {
+          "label": "Image Two",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "titleTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Title Two",
+          "placeholder": ""
+        }
+      },
+      "descriptionTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Description Two",
+          "placeholder": ""
+        }
+      },
+      "dateTwo": {
+        "type": "Text",
+        "config": {
+          "label": "Date Two",
+          "placeholder": ""
+        }
+      },
+      "imageThree": {
+        "type": "Image",
+        "config": {
+          "label": "Image Three",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "titleThree": {
+        "type": "Text",
+        "config": {
+          "label": "Title Three",
+          "placeholder": ""
+        }
+      },
+      "descriptionThree": {
+        "type": "Text",
+        "config": {
+          "label": "Description Three",
+          "placeholder": ""
+        }
+      },
+      "dateThree": {
+        "type": "Text",
+        "config": {
+          "label": "Date Three",
+          "placeholder": ""
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

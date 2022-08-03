@@ -1,9 +1,45 @@
 {
-  "id": "604bb27d-84d7-4c2a-842b-ad1ad0dc71e8",
-  "uid": "aut-dolor-ea",
+  "id": "9a074cdd-4918-484a-811d-a260f4f06397",
+  "uid": "nihil-autem-exercitationem",
   "type": "aboutus",
   "data": {
-    "heading": "redefine synergistic channels",
-    "description": "orchestrate one-to-one markets"
+    "heading": "leverage viral content",
+    "description": "deliver B2C markets",
+    "imageOne": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+    },
+    "titleOne": "enhance interactive infomediaries",
+    "descriptionOne": "disintermediate sexy e-services",
+    "dateOne": "deliver B2B synergies",
+    "imageTwo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+    },
+    "titleTwo": "recontextualize e-business functionalities",
+    "descriptionTwo": "deploy extensible paradigms",
+    "dateTwo": "maximize turn-key e-business",
+    "imageThree": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=900&h=500&fit=crop"
+    },
+    "titleThree": "strategize plug-and-play blockchains",
+    "descriptionThree": "aggregate best-of-breed schemas",
+    "dateThree": "target bleeding-edge e-tailers"
   }
 }
