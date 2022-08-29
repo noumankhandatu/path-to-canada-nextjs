@@ -106,7 +106,7 @@ const Header = () => {
           <img
             className="ease-in-out duration-1000 cursor-pointer"
             ref={imageRef}
-            src={logo ? logo : `pending`}
+            src={logo}
             alt="pending"
           />
         </Link>
