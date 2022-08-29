@@ -9,130 +9,88 @@ import BlackBannerLeafSection from "../scr/components/Organism/blackBannerLeafSe
 import RedLableText from "../scr/components/Atoms/redLableText";
 import Font from "../scr/components/Atoms/Font";
 import RedBannerSection from "../scr/components/Organism/redBannerSection";
-import Prismic from "prismic-javascript";
-import { Client } from "../prismic-configuration";
-const Home: NextPage = ({
-  home,
-}:
-  | {
-      license: string;
-      next_page: null;
-      prev_page?: null;
-      results: [];
-      results_per_page: number;
-      results_size?: number;
-      total_pages: number;
-      total_results_size: number;
-      version?: string;
-    }[]
-  | any) => {
-  console.log(home, "home");
-
-  const mapper = home?.results?.map((items) => {
-    return items?.data;
-  });
-  // home banner slice
-  const bTitle = mapper?.map((items) => {
-    return items.slices[2].items[0].title;
-  });
-  const bDescription = mapper?.map((items) => {
-    return items.slices[2].items[0].description;
-  });
-  const backgroundImage = mapper?.map((items) => {
-    return items.slices[2].items[0].backgroundImage.url;
-  });
-  // home banner slice end
-
-  // TechInfo banner
-  const headingOne = mapper?.map((items) => {
-    return items.slices[1].items[0].headingOne;
-  });
-  const lableOne = mapper?.map((items) => {
-    return items.slices[1].items[0].lableOne;
-  });
-  const headingTwo = mapper?.map((items) => {
-    return items.slices[1].items[0].headingTwo;
-  });
-  const labelTwo = mapper?.map((items) => {
-    return items.slices[1].items[0].labelTwo;
-  });
-  // TechInfo banner end
-  const title = mapper[0].title;
-  const description = mapper[0].description;
-  const textOne = mapper[0].textOne;
-  const textTwo = mapper[0].textTwo;
-  const textThree = mapper[0].textThree;
-  const textFour = mapper[0].textFour;
-  const one = mapper[0].one;
-  const two = mapper[0].two;
-  const three = mapper[0].three;
-  const four = mapper[0].four;
-  const five = mapper[0].five;
-  const six = mapper[0].six;
-  const roadTextOne = mapper[0].roadTextOne;
-  const roadTextTwo = mapper[0].roadTextTwo;
-  const roadTextThree = mapper[0].roadTextThree;
-  const roadTextFour = mapper[0].roadTextFour;
-  const roadTextFive = mapper[0].roadTextFive;
-  const roadTextSix = mapper[0].roadTextSix;
-  const roadImageOne = mapper[0].roadImageOne.url;
-  const roadImageTwo = mapper[0].roadImageTwo.url;
-  const roadImageThree = mapper[0].roadImageThree.url;
-  const roadImageFour = mapper[0].roadImageFour.url;
-  const roadImageFive = mapper[0].roadImageFive.url;
-  const roadImageSix = mapper[0].roadImageSix.url;
+import * as prismic from "@prismicio/client";
+import sm from "../sm.json";
+const Home: NextPage = ({ home }: any) => {
+  const mapper = home.data;
+  const bTitle = mapper.slices[2].items[0].title;
+  const bDescription = mapper.slices[2].items[0].description;
+  const backgroundImage = mapper.slices[2].items[0].backgroundImage.url;
+  const headingOne = mapper.slices[1].items[0].headingOne;
+  const lableOne = mapper.slices[1].items[0].lableOne;
+  const headingTwo = mapper.slices[1].items[0].headingTwo;
+  const labelTwo = mapper.slices[1].items[0].labelTwo;
+  const title = mapper.title;
+  const description = mapper.description;
+  const textOne = mapper.textOne;
+  const textTwo = mapper.textTwo;
+  const textThree = mapper.textThree;
+  const textFour = mapper.textFour;
+  const one = mapper.one;
+  const two = mapper.two;
+  const three = mapper.three;
+  const four = mapper.four;
+  const five = mapper.five;
+  const six = mapper.six;
+  const roadTextOne = mapper.roadTextOne;
+  const roadTextTwo = mapper.roadTextTwo;
+  const roadTextThree = mapper.roadTextThree;
+  const roadTextFour = mapper.roadTextFour;
+  const roadTextFive = mapper.roadTextFive;
+  const roadTextSix = mapper.roadTextSix;
+  const roadImageOne = mapper.roadImageOne.url;
+  const roadImageTwo = mapper.roadImageTwo.url;
+  const roadImageThree = mapper.roadImageThree.url;
+  const roadImageFour = mapper.roadImageFour.url;
+  const roadImageFive = mapper.roadImageFive.url;
+  const roadImageSix = mapper.roadImageSix.url;
+  const imageOne = mapper.imageOne.url;
+  const imageTwo = mapper.imageTwo.url;
+  const liOne = mapper.liOne;
+  const liTwo = mapper.liTwo;
+  const liThree = mapper.liThree;
+  const liFour = mapper.liFour;
+  const liFive = mapper.liFive;
+  const liSix = mapper.liSix;
+  const liSeven = mapper.liSeven;
+  const colorTextOne = mapper.colorTextOne;
+  const colorTextTwo = mapper.colorTextTwo;
+  const roadMapTitle = mapper.roadMapTitle;
+  const roadMapDescription = mapper.roadMapDescription;
+  const testimonialImageOne = mapper.testimonialImageOne.url;
+  const IconOne = mapper.IconOne.url;
+  const nameOne = mapper.nameOne;
+  const descriptionOne = mapper.descriptionOne;
+  const testimonialImageTwo = mapper.testimonialImageTwo.url;
+  const IconTwo = mapper.IconTwo.url;
+  const descriptionTwo = mapper.descriptionTwo;
+  const nameTwo = mapper.nameTwo;
   const RoadMapArray = [
     {
-      firstImg: roadImageOne ? roadImageOne : `pending`,
-      secondImg: roadImageTwo ? roadImageTwo : `pending`,
-      countOne: one ? one : `pending`,
-      countTwo: two ? two : `pending`,
-      textOne: roadTextOne ? roadTextOne : `pending`,
-      textTwo: roadTextFour ? roadTextFour : `pending`,
+      firstImg: roadImageOne,
+      secondImg: roadImageTwo,
+      countOne: one,
+      countTwo: two,
+      textOne: roadTextOne,
+      textTwo: roadTextFour,
     },
     {
-      firstImg: roadImageThree ? roadImageThree : `pending`,
-      secondImg: roadImageFour ? roadImageFour : `pending`,
-      countOne: three ? three : `pending`,
-      countTwo: four ? four : `pending`,
-      textOne: roadTextTwo ? roadTextTwo : `pending`,
-      textTwo: roadTextFive ? roadTextFive : `pending`,
+      firstImg: roadImageThree,
+      secondImg: roadImageFour,
+      countOne: three,
+      countTwo: four,
+      textOne: roadTextTwo,
+      textTwo: roadTextFive,
     },
     {
-      firstImg: roadImageFive ? roadImageFive : `pending`,
-      secondImg: roadImageSix ? roadImageSix : `pending`,
-      countOne: five ? five : `pending`,
-      countTwo: six ? six : `pending`,
-      textOne: roadTextThree ? roadTextThree : `pending`,
-      textTwo: roadTextSix ? roadTextSix : `pending`,
+      firstImg: roadImageFive,
+      secondImg: roadImageSix,
+      countOne: five,
+      countTwo: six,
+      textOne: roadTextThree,
+      textTwo: roadTextSix,
     },
   ];
-  const imageOne = mapper[0].imageOne.url;
-  const imageTwo = mapper[0].imageTwo.url;
-  const liOne = mapper[0].liOne;
-  const liTwo = mapper[0].liTwo;
-  const liThree = mapper[0].liThree;
-  const liFour = mapper[0].liFour;
-  const liFive = mapper[0].liFive;
-  const liSix = mapper[0].liSix;
-  const liSeven = mapper[0].liSeven;
-  const colorTextOne = mapper[0].colorTextOne;
-  const colorTextTwo = mapper[0].colorTextTwo;
-  const roadMapTitle = mapper[0].roadMapTitle;
-  const roadMapDescription = mapper[0].roadMapDescription;
-
-  const testimonialImageOne = mapper[0].testimonialImageOne.url;
-  const IconOne = mapper[0].IconOne.url;
-  const nameOne = mapper[0].nameOne;
-  const descriptionOne = mapper[0].descriptionOne;
-
-  const testimonialImageTwo = mapper[0].testimonialImageTwo.url;
-  const IconTwo = mapper[0].IconTwo.url;
-  const descriptionTwo = mapper[0].descriptionTwo;
-  const nameTwo = mapper[0].nameTwo;
-
-  // profile banner
-
   return (
     <div>
       <Head>
@@ -149,99 +107,81 @@ const Home: NextPage = ({
       </Head>
       <div className="pt-40">
         <HomePageFirstSection
-          heading={`${bTitle ? bTitle : `pending`}`}
-          paragraph={bDescription ? bDescription : `pending`}
-          bgImage={`${backgroundImage}`}
+          heading={bTitle}
+          paragraph={bDescription}
+          bgImage={backgroundImage}
           showFirstBtn={true}
           showSecondBtn={true}
         />
         {/* Second Section Started  => */}
         <Wrapper className="bg-light-red">
           <div className="text-4xl text-center font-bold pt-20  pb-10  text-cyan-900">
-            {title ? title : `pending`}
+            {title}
           </div>
-          <Font className=" pt-10 pb-16 ">
-            {description ? description : `pending`}
-          </Font>
-          {/* grid =>  */}
+          <Font className=" pt-10 pb-16 ">{description}</Font>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 pb-20 gap-10">
             <div>
               <div className="text-red-600 text-xl	 font-bold tracking-wide	">
-                {textOne ? textOne : `pending`}
+                {textOne}
               </div>
               <div className=" text-2xl	font-bold  pb-10 pt-4 tracking-wide	">
-                {textThree ? textThree : `pending`}
+                {textThree}
               </div>
-              <img
-                className="w-6/7"
-                src={imageOne ? imageOne : `pending`}
-                alt=""
-              />
+              <img className="w-6/7" src={imageOne} alt="" />
               <Font className="pt-10 pb-1 list-disc	">
-                <li>{liOne ? liOne : `pending`}</li>
+                <li>{liOne}</li>
               </Font>
               <Font className=" pb-1 list-disc	">
-                <li>{liTwo ? liTwo : `pending`}</li>
+                <li>{liTwo}</li>
               </Font>
               <Font className=" pb-1 list-disc	">
-                <li>{liThree ? liThree : `pending`}</li>
+                <li>{liThree}</li>
               </Font>
               <Font className=" pb-1 list-disc	">
-                <li>{liFour ? liFour : `pending`}</li>
+                <li>{liFour}</li>
               </Font>
-              <Font>{liFive ? liFive : `pending`}</Font>
+              <Font>{liFive}</Font>
               <div className="mt-10 mb-10">
-                <RedLableText text={colorTextOne ? colorTextOne : `pending`} />
+                <RedLableText text={colorTextOne} />
               </div>
             </div>
             <div>
-              <div className="text-red-600 text-xl  	font-bold tracking-wide	">
-                {textTwo ? textTwo : `pending`}
+              <div className="text-red-600 text-xl font-bold tracking-wide	">
+                {textTwo}
               </div>
               <div className="text-2xl pt-4  pb-10	font-bold tracking-wide	">
-                {textFour ? textFour : `pending`}
+                {textFour}
               </div>
-              <img
-                className="w-6/7"
-                src={imageTwo ? imageTwo : `pending`}
-                alt=""
-              />
-              <Font className="pt-10 pb-10  leading-loose">
-                {liSix ? liSix : `pending`}
-              </Font>
+              <img className="w-6/7" src={imageTwo} alt="" />
+              <Font className="pt-10 pb-10  leading-loose">{liSix}</Font>
               <Font>
-                {liSeven ? liSeven : `pending`}
+                {liSeven}
                 <div className="mt-10 mb-10">
-                  <RedLableText
-                    text={colorTextTwo ? colorTextTwo : `pending`}
-                  />
+                  <RedLableText text={colorTextTwo} />
                 </div>
               </Font>
             </div>
           </div>
         </Wrapper>
-        {/* Road Map Start */}
         <Wrapper className="bg-road-map-color text-white">
           <div className=" pt-20 pb-52">
             <div className="lg:text-5xl text-3xl text-center   font-bold ">
-              {roadMapTitle ? roadMapTitle : `pending`}
+              {roadMapTitle}
             </div>
             <Font className="text-center pt-16 pb-16">
-              {roadMapDescription ? roadMapDescription : `pending`}
+              {roadMapDescription}
             </Font>
             {RoadMapArray.map((items: any) => {
               return <RoadMapCards {...items} />;
             })}
           </div>
         </Wrapper>
-        {/* red layer connecting section */}
         <RedBannerSection
-          Fheading={headingOne ? headingOne : `pending`}
-          Sheading={lableOne ? lableOne : `pending`}
-          Flabel={headingTwo ? headingTwo : `pending`}
-          Slabel={labelTwo ? labelTwo : `pending`}
+          Fheading={headingOne}
+          Sheading={lableOne}
+          Flabel={headingTwo}
+          Slabel={labelTwo}
         />
-        {/* testimonals */}
         <Wrapper className="pb-20 ">
           <div className=" pt-20 pb-16">
             <div className="lg:text-5xl text-4xl text-center text-aqua-color  font-bold ">
@@ -251,27 +191,22 @@ const Home: NextPage = ({
           <div className="grid grid-cols-1 text-center justify-center justify-items-center md:grid-cols-[1fr_1fr] gap-4  ">
             <div>
               <TestimonialCard
-                text={descriptionOne ? descriptionOne : `pending`}
-                iconImg={IconOne ? IconOne : `pending`}
-                avatarImg={
-                  testimonialImageOne ? testimonialImageOne : `pending`
-                }
-                name={nameOne ? nameOne : `pending`}
+                text={descriptionOne}
+                iconImg={IconOne}
+                avatarImg={testimonialImageOne}
+                name={nameOne}
               />
             </div>
             <div>
               <TestimonialCard
-                text={descriptionTwo ? descriptionTwo : `pending`}
-                iconImg={IconTwo ? IconTwo : `pending`}
-                avatarImg={
-                  testimonialImageTwo ? testimonialImageTwo : `pending`
-                }
-                name={nameTwo ? nameTwo : `pending`}
+                text={descriptionTwo}
+                iconImg={IconTwo}
+                avatarImg={testimonialImageTwo}
+                name={nameTwo}
               />
             </div>
           </div>
         </Wrapper>
-        {/* black banner */}
         <BlackBannerLeafSection />
       </div>
     </div>
@@ -280,11 +215,9 @@ const Home: NextPage = ({
 
 export default Home;
 
-// this function is called everytime a request/refresh is made
-export async function getServerSideProps() {
-  const home = await Client().query(
-    Prismic.Predicates.at("document.type", "home")
-  );
+export async function getStaticProps() {
+  const client = prismic.createClient(sm.apiEndpoint);
+  const home = await client.getByUID("home", "home-id");
   return {
     props: {
       home,
