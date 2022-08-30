@@ -24,23 +24,22 @@ const Blog = ({
       version?: string;
     }[]
   | any) => {
-
   const dispatch = useDispatch();
   const state: any = useSelector((state: any) => state.BlogSlicer.data);
   const headingOne = blog.data.slices[1].items[0].title;
   const description = blog?.data.slices[1]?.items[0]?.description;
   const backgroundImage = blog?.data.slices[1]?.items[0]?.backgroundImage?.url;
   const mapper = blog?.data?.slices[0]?.items;
-  
+
   useEffect(() => {
     dispatch(fetchUserById());
   }, []);
   return (
     <div className="pt-40">
       <HomePageFirstSection
-        heading={headingOne ? headingOne : `pending`}
-        bgImage={backgroundImage ? backgroundImage : `pending`}
-        paragraph={description ? description : `pending`}
+        heading={headingOne}
+        bgImage={backgroundImage}
+        paragraph={description}
       />
       <Wrapper>
         <div className="pt-10 pb-20">

@@ -28,7 +28,7 @@ const AboutUs = ({ aboutus }: any) => {
       />
       <Wrapper className="bg-aqua-color text-white text-center pt-20 pb-20">
         <div className="text-4xl font-bold pb-10">{heading}</div>
-        <Font>{description ? description : `pending3`}</Font>
+        <Font>{description}</Font>
       </Wrapper>
       <RedBannerSection
         Fheading={headingOne}

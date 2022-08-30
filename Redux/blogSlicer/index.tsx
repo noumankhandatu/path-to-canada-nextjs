@@ -26,16 +26,11 @@ const BlogSlicer = createSlice({
     },
   },
   extraReducers: {
-    [fetchUserById.pending]: () => {
-      console.log("pending");
-    },
+    [fetchUserById.pending]: () => {},
     [fetchUserById.fulfilled]: (state: any, { payload }: any) => {
-      console.log("fullfilled ");
       return { ...state, data: payload.data };
     },
-    [fetchUserById.rejected]: () => {
-      console.log("rejected");
-    },
+    [fetchUserById.rejected]: () => {},
   },
 });
 export const { blogDataFetchAct } = BlogSlicer.actions;

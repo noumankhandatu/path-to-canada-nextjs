@@ -82,14 +82,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pb-20 pt-20">
           <div>
             <div className="lg:text-5xl text-4xl font-bold tracking-wider">
-              {lets ? lets : `pending`}
+              {lets}
             </div>
             <div className="lg:text-5xl text-4xl font-bold pb-5 tracking-wider">
-              {Connected ? Connected : `pending`}
+              {Connected}
             </div>
-            <Font>{Sign ? Sign : `pending`}</Font>
-            <Font>{North ? North : `pending`}</Font>
-            <Font>{industry ? industry : `pending`}</Font>
+            <Font>{Sign}</Font>
+            <Font>{North}</Font>
+            <Font>{industry}</Font>
             <div className="flex item-center space-x-4 pt-5 pb-5">
               <AcademicCapIcon className="h-10 p-2 w-10 cursor-pointer rounded-full bg-white text-footer-color" />
               <AnnotationIcon className="h-10 p-2 w-10  cursor-pointer rounded-full bg-white text-footer-color" />
@@ -99,24 +99,20 @@ const Footer = () => {
           </div>
           <div>
             <div className="grid grid-cols-1 lg:grid-cols-2  gap-3 pb-5">
-              <Input text={First ? First : `pending`} width={"w-full"} />
-              <Input text={Last ? Last : `pending`} width={"w-full"} />
+              <Input text={First} width={"w-full"} />
+              <Input text={Last} width={"w-full"} />
             </div>
-            <Input text={Email ? Email : `pending`} width={"w-full"} />
-            <div className="font-bold pb-5  pt-8">
-              {CHOOSE ? CHOOSE : `pending`}
-            </div>
+            <Input text={Email} width={"w-full"} />
+            <div className="font-bold pb-5 pt-8">{CHOOSE}</div>
             <CheckBox text="FOR EMPLOYEES" />
             <div className="pt-3 -pb-3"></div>
             <CheckBox text="FOR EMPLOYERS" />
             <div className="pt-10 pb-3">
-              <Button text={SUBSCRIBE ? SUBSCRIBE : `pending`} primary={true} />
+              <Button text={SUBSCRIBE} primary={true} />
             </div>
           </div>
         </div>
-        <Font className="text-center  pb-10">
-          {CANADA ? CANADA : `pending`}
-        </Font>
+        <Font className="text-center pb-10">{CANADA}</Font>
       </Wrapper>
     </div>
   );
