@@ -6,7 +6,6 @@ import ScrollTopButton from "../../Molecules/scrollTopButton";
 import Drawer from "../Drawer/index";
 import Prismic from "prismic-javascript";
 import { Client } from "../../../../prismic-configuration";
-import logoAlt from "/logo.svg";
 const Header = () => {
   const [toggleFn, setToggleFn] = useState<Boolean>(true);
   const [fetchData, setFetchData] = useState<
