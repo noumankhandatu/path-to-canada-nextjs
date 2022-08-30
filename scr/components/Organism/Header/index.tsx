@@ -6,7 +6,7 @@ import ScrollTopButton from "../../Molecules/scrollTopButton";
 import Drawer from "../Drawer/index";
 import Prismic from "prismic-javascript";
 import { Client } from "../../../../prismic-configuration";
-
+import logoAlt from "/logo.svg";
 const Header = () => {
   const [toggleFn, setToggleFn] = useState<Boolean>(true);
   const [fetchData, setFetchData] = useState<
@@ -61,12 +61,12 @@ const Header = () => {
     return items?.data.linkSix;
   });
   const myArray: string[] = [
-    linkOne ? linkOne : `pending`,
-    linkTwo ? linkTwo : `pending`,
-    linkThree ? linkThree : `pending`,
-    linkFour ? linkFour : `pending`,
-    linkFive ? linkFive : `pending`,
-    linkSix ? linkSix : `pending`,
+    linkOne ? linkOne : `EMPLOYEE`,
+    linkTwo ? linkTwo : `EMPLOYERS`,
+    linkThree ? linkThree : `JOBS`,
+    linkFour ? linkFour : `FAQS`,
+    linkFive ? linkFive : `BLOG`,
+    linkSix ? linkSix : `ABOUT US`,
   ];
   // dynamic end here
 
@@ -106,8 +106,8 @@ const Header = () => {
           <img
             className="ease-in-out duration-1000 cursor-pointer"
             ref={imageRef}
-            src={logo}
-            alt="pending"
+            src={logo ? logo : "/logo.svg"}
+            alt={"loading"}
           />
         </Link>
         <div className="md:hidden gap-4 sm:hidden lg:flex space-x-4 hidden ">

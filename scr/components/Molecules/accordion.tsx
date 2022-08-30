@@ -5,7 +5,7 @@ type AccordionProps = {
   items: object | any;
 };
 const Accordion = ({ items }: AccordionProps) => {
-  const { label, paragraph } = items;
+  const { question, answer } = items;
   const ref = useRef<HTMLDivElement>(null!);
   const toggle = useRef<HTMLDivElement>(null!);
   const handleToggle = () => {
@@ -30,11 +30,11 @@ const Accordion = ({ items }: AccordionProps) => {
       onClick={handleToggle}
     >
       <div className="flex justify-between ">
-        <small>{label}</small>
+        <small>{question}</small>
         <IoIosArrowDropdown className="w-5 h-5  text-gray-300" />
       </div>
       <div ref={toggle} className="ease-in-out duration-1000  ">
-        <small className="pt-6 ">{paragraph}</small>
+        <small className="pt-6 ">{answer}</small>
       </div>
     </div>
   );

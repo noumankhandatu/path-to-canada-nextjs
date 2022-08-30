@@ -1,7 +1,9 @@
 import React from "react";
 import HomePageFirstSection from "../scr/components/Organism/homePageFirstSection";
 import BlackBannerLeafSection from "../scr/components/Organism/blackBannerLeafSection";
-const Error = () => {
+
+const Error = ({ home }) => {
+
   return (
     <div className="pt-40">
       <HomePageFirstSection

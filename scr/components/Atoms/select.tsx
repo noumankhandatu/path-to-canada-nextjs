@@ -1,26 +1,19 @@
 import React from "react";
-import Font from "./Font";
 type SelectProps = {
   label: string;
-  values: string[] | object | any;
 };
-const Select = ({ label, values }: SelectProps) => {
+const Select = ({ label }: SelectProps) => {
   return (
     <div>
       <select
         id="countries"
-        className="bg-white border border-white-300  cursor-pointer lg:w-full  p-2.5  text-black focus:outline-none"
+        className="form-control bg-white border border-white-300  cursor-pointer lg:w-full  p-2.5  text-black focus:outline-none"
       >
-        <option selected>
-          <Font>{label}</Font>
-        </option>
-        {values.map((items: any) => {
-          return (
-            <option>
-              <Font> {items}</Font>
-            </option>
-          );
-        })}
+        <option>{label}</option>
+        <option>tokyo</option>
+        <option>china</option>
+        <option>japan</option>
+        <option>pakistan</option>
       </select>
     </div>
   );
