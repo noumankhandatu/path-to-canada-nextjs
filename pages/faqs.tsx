@@ -41,19 +41,11 @@ const FAQS = ({
       />
       <Wrapper className="bg-aqua-color text-white">
         <div className="pt-20 pb-20 text-center">
-          <div className="text-4xl font-bold">
-            {heading ? heading : `pending`}
-          </div>
-          <div className="font-bold pt-10 pb-2">
-            {title ? title : `pending`}
-          </div>
-          <Font className="pt-4 pb-4">
-            {descriptionOne ? descriptionOne : `pending`}
-          </Font>
-          <Font className="pt-4 pb-4">
-            {descriptionTwo ? descriptionTwo : `pending`}
-          </Font>
-          <Font>{descriptionThree ? descriptionThree : `pending`}</Font>
+          <div className="text-4xl font-bold">{heading}</div>
+          <div className="font-bold pt-10 pb-2">{title}</div>
+          <Font className="pt-4 pb-4">{descriptionOne}</Font>
+          <Font className="pt-4 pb-4">{descriptionTwo}</Font>
+          <Font>{descriptionThree}</Font>
         </div>
       </Wrapper>
       <Wrapper className="pt-32 pb-20">
