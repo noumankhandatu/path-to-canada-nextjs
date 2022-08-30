@@ -97,34 +97,34 @@ const RedBannerSection = ({
 
   let AvatarArray = [
     {
-      img: imageOne ? imageOne : `pending`,
-      name: nameOne ? nameOne : `pending`,
-      label: titleOne ? titleOne : `pending`,
+      img: imageOne,
+      name: nameOne,
+      label: titleOne,
     },
     {
-      img: imageTwo ? imageTwo : `pending`,
-      name: nameTwo ? nameTwo : `pending`,
-      label: titleTwo ? titleTwo : `pending`,
+      img: imageTwo,
+      name: nameTwo,
+      label: titleTwo,
     },
     {
-      img: imageThree ? imageThree : `pending`,
-      name: nameThree ? nameThree : `pending`,
-      label: titleThree ? titleThree : `pending`,
+      img: imageThree,
+      name: nameThree,
+      label: titleThree,
     },
     {
-      img: imageFour ? imageFour : `pending`,
-      name: nameFour ? nameFour : `pending`,
-      label: titleFour ? titleFour : `pending`,
+      img: imageFour,
+      name: nameFour,
+      label: titleFour,
     },
     {
-      img: imageFive ? imageFive : `pending`,
-      name: nameFive ? nameFive : `pending`,
-      label: titleFive ? titleFive : `pending`,
+      img: imageFive,
+      name: nameFive,
+      label: titleFive,
     },
     {
-      img: imageSix ? imageSix : `pending`,
-      name: nameSix ? nameSix : `pending`,
-      label: titleSix ? titleSix : `pending`,
+      img: imageSix,
+      name: nameSix,
+      label: titleSix,
     },
   ];
 
@@ -165,8 +165,8 @@ const RedBannerSection = ({
       <Wrapper className="bg-red-bgColor text-white pb-20">
         <div className=" pt-16 pb-16">
           <div className="lg:text-4xl text-3xl text-center   font-bold ">
-            {weConnect ? weConnect : `pending`}
-            <div className="break-words">{letsWork ? letsWork : `pending`}</div>
+            {weConnect}
+            <div className="break-words">{letsWork}</div>
           </div>
         </div>
         <div className="grid grid-cols-1 text-center md:grid-cols-[1fr_0.1fr_1fr] ">
@@ -187,27 +187,21 @@ const RedBannerSection = ({
         <div className="pt-20 pb-20 grid lg:grid-cols-2 grid-col-1 gap-10">
           <div>
             <div className="text-4xl text-aqua-color font-bold">
-              {pickingUp ? pickingUp : `pending`}
+              {pickingUp}
             </div>
             <div className="text-2xl pb-10 pt-10 text-aqua-color font-bold">
-              {myStory ? myStory : `pending`}
+              {myStory}
             </div>
-            <Font>{storyDes ? storyDes : `pending`}</Font>
+            <Font>{storyDes}</Font>
             <div className="text-2xl pb-1 pt-1 text-aqua-color font-bold">
-              {pathToCanada ? pathToCanada : `pending`}
+              {pathToCanada}
             </div>
-            <Font className="pt-4 pb-4 ">
-              {pathToCanadaDes ? pathToCanadaDes : `pending`}
-            </Font>
+            <Font className="pt-4 pb-4 ">{pathToCanadaDes}</Font>
           </div>
           <div className="text-center">
-            <img
-              width={"100%"}
-              src={WriterImage ? WriterImage : `pending`}
-              alt=""
-            />
-            <Font className="pt-10">{writedName ? writedName : `pending`}</Font>
-            <Font className="pt-2">{writerDes ? writerDes : `pending`}</Font>
+            <img width={"100%"} src={WriterImage} alt="" />
+            <Font className="pt-10">{writedName}</Font>
+            <Font className="pt-2">{writerDes}</Font>
           </div>
         </div>
       </Wrapper>

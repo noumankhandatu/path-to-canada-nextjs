@@ -6,7 +6,7 @@ const BlogCard = ({ items }: object | any) => {
   const { image, title, date, description } = items;
   return (
     <div className="  flex flex-col cursor-pointer">
-      <img className={"w-[300px] h-[200px]"} src={image} alt="" />
+      <img className={"w-[300px] h-[200px]"} src={image.url} alt="" />
       <div className="text-xl text-aqua-color font-bold pb-2 pt-10">
         {title}
       </div>
