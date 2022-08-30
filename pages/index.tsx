@@ -105,6 +105,7 @@ const Home: NextPage = ({ home }: any) => {
           src="https://static.cdn.prismic.io/prismic.js?new=true&repo=codeminimalist"
         ></script>
       </Head>
+x
       <div className="pt-40">
         <HomePageFirstSection
           heading={bTitle}
